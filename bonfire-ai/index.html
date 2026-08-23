@@ -347,7 +347,7 @@
     transform:translateY(8px);
     transition:opacity .45s ease, transform .45s ease;
     box-shadow:0 1px 1px rgba(0,0,0,0.08);
-    text-align:left; /* Ensure all text inside bubbles is left aligned */
+    text-align:left;
   }
   .msg.show{ opacity:1; transform:translateY(0); }
   .msg-text{ display:inline; }
@@ -427,7 +427,7 @@
   }
 
   .quick-replies{
-    align-self:flex-start; /* Attached to the left, under AI message */
+    align-self:flex-start;
     display:flex;
     flex-direction:column;
     flex-shrink:0;
@@ -561,11 +561,6 @@
     max-width:900px;
   }
 
-  /* ---------- About Dr. Amy CTA ---------- */
-  .amy-cta{
-    margin-top:24px;
-  }
-
   /* ---------- How it helps ---------- */
   .how{
     padding:110px 0;
@@ -614,46 +609,6 @@
   .how-item p{
     color:var(--charcoal-soft);
     font-size:0.98rem;
-  }
-
-  /* ---------- Meet Dr Amy ---------- */
-  .amy{
-    padding:120px 0;
-  }
-  .amy .wrap{
-    display:grid;
-    grid-template-columns:0.85fr 1.15fr;
-    gap:64px;
-    align-items:center;
-  }
-  .amy-photo-wrap{
-    position:relative;
-    display:flex;
-    justify-content:center;
-  }
-  .amy-blob{
-    position:absolute;
-    inset:0;
-    z-index:0;
-  }
-  .amy-photo{
-    position:relative;
-    z-index:1;
-    width:78%;
-    aspect-ratio:1/1;
-    object-fit:cover;
-    border-radius:42% 58% 61% 39% / 51% 44% 56% 49%;
-    background:var(--white);
-    border:1px solid var(--line);
-  }
-  .amy-copy h2{
-    font-size:clamp(1.7rem, 2.4vw + 1rem, 2.4rem);
-    margin-bottom:22px;
-  }
-  .amy-copy p{
-    color:var(--charcoal-soft);
-    font-size:1.05rem;
-    max-width:520px;
   }
 
   /* ---------- Try it out ---------- */
@@ -708,16 +663,13 @@
     .hero-visual{ order:-1; margin-bottom:12px; }
     .phone-mockup{ width:240px; }
     .how-grid{ grid-template-columns:1fr; gap:40px; }
-    .amy .wrap{ grid-template-columns:1fr; text-align:center; }
-    .amy-copy p{ margin-left:auto; margin-right:auto; }
-    .amy-photo{ width:56%; }
     .footer .wrap{ justify-content:center; text-align:center; }
   }
 
   @media (max-width:480px){
     .wrap{ padding:0 20px; }
     .hero{ padding:56px 0 70px; }
-    .how, .amy{ padding:76px 0; }
+    .how{ padding:76px 0; }
     .trial{ padding:76px 0 90px; }
   }
 
@@ -996,8 +948,8 @@
       <div class="how-grid">
         <div class="how-item reveal">
           <div class="num">1</div>
-          <h3 data-i18n="how1Title">Dr. Amy's Knowledge, 24/7</h3>
-          <p data-i18n="how1Body">Learn professional techniques based on what Dr. Amy would coach moms with.</p>
+          <h3 data-i18n="how1Title">Clinical Knowledge, 24/7</h3>
+          <p data-i18n="how1Body">Learn professional techniques based on proven clinical protocols.</p>
         </div>
         <div class="how-item reveal">
           <div class="num">2</div>
@@ -1009,22 +961,6 @@
           <h3 data-i18n="how3Title">Voice Messages</h3>
           <p data-i18n="how3Body">Too tired to text? Send our AI Coach a voice message in English or Mandarin.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="amy">
-    <div class="wrap">
-      <div class="amy-photo-wrap reveal">
-        <svg class="amy-blob blob-drift" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#E8EFE3" d="M48,-55C61,-45,69,-27,71,-8C73,10,70,29,59,44C48,59,29,70,8,73C-13,76,-38,71,-53,57C-68,43,-73,20,-72,-3C-71,-26,-64,-49,-49,-60C-34,-71,-11,-70,7,-73C25,-76,35,-65,48,-55Z" transform="translate(100 100)"/>
-        </svg>
-        <img class="amy-photo" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/amy.svg" alt="Dr. Amy">
-      </div>
-      <div class="amy-copy reveal">
-        <h2 data-i18n="amyHeading">Trained with Dr. Amy's Clinical Knowledge</h2>
-        <p data-i18n="amyBody">Dr. Amy is an American licensed psychologist with over 20 years of experience helping families in Singapore navigate stress. She specializes in maternal mental health and parent-child bonding. Nightingale brings her compassionate, proven strategies directly to your phone exactly when you need them most.</p>
-        <a href="/amy-reale" class="btn btn-ghost amy-cta" data-i18n="amyCta">About Dr. Amy</a>
       </div>
     </div>
   </section>
@@ -1073,15 +1009,12 @@
       howHeading: { en:"Better You for $49/Month, Not $1,400", cn:"每月只需 $49，而不是 $1,400，遇见更好的自己" },
       howIntro1: { en:"Nightingale AI unpacks what you would usually learn from our clinical team over a month at your fingertips, 24/7.", cn:"Nightingale AI 将您通常需要花一个月时间从我们临床团队那里学到的知识，转化为触手可及的 24/7 全天候支持。" },
       howIntro2: { en:"Manage your emotions better. Build stronger resilience anywhere. Repair your family relationships.", cn:"更好地管理您的情绪。随时随地建立更强大的心理韧性。修复您的家庭关系。" },
-      how1Title: { en:"Dr. Amy's Knowledge, 24/7", cn:"Amy 博士的专业知识，全天候待命" },
-      how1Body: { en:"Learn professional techniques based on what Dr. Amy would coach moms with.", cn:"学习基于 Amy 博士日常指导母亲们的专业技巧。" },
+      how1Title: { en:"Clinical Knowledge, 24/7", cn:"专业知识，全天候待命" },
+      how1Body: { en:"Learn professional techniques based on proven clinical protocols.", cn:"学习基于专业临床协议的实用技巧。" },
       how2Title: { en:"Scenario-Mode Exercises", cn:"场景化练习" },
       how2Body: { en:"Get step-by-step guidance just by tapping buttons. No typing required.", cn:"只需点击按钮即可获得循序渐进的引导。完全无需打字。" },
       how3Title: { en:"Voice Messages", cn:"语音消息" },
       how3Body: { en:"Too tired to text? Send our AI Coach a voice message in English or Mandarin.", cn:"累得不想打字？您可以向我们的 AI 教练发送英文或中文的语音消息。" },
-      amyHeading: { en:"Trained with Dr. Amy's Clinical Knowledge", cn:"融合 Amy 博士的临床专业知识" },
-      amyBody: { en:"Dr. Amy is an American licensed psychologist with over 20 years of experience helping families in Singapore navigate stress. She specializes in maternal mental health and parent-child bonding. Nightingale brings her compassionate, proven strategies directly to your phone exactly when you need them most.", cn:"Amy 博士是一名美国执业心理学家，拥有超过 20 年的经验，致力于帮助新加坡家庭应对压力。她专注于母亲心理健康和亲子关系。Nightingale 将她充满同情心、经过验证的策略直接带到您的手机上，在您最需要的时候为您提供帮助。" },
-      amyCta: { en:"About Dr. Amy", cn:"关于 Amy 博士" },
       trialHeading: { en:"See if it helps for two full weekends.", cn:"试试两个完整的周末，看看是否适合您。" },
       trialP1: { en:"Get 14 days completely free. No credit card required today.", cn:"完全免费获得 14 天试用。今日无需信用卡。" },
       trialP2: { en:"If it helps you find peace on the hard days, keep it in your pocket for just $49 a month. Cancel anytime.", cn:"如果它能帮您在艰难的日子里找到平静，只需每月 $49 即可继续使用。随时取消。" },
@@ -1125,7 +1058,7 @@
       { type:'quick', options:["还在生气","觉得丢脸","说不上来"] },
       { type:'pick', index:1, text:"觉得丢脸", time:"2:13" },
       { type:'typing' },
-      { type:'ai', text:"你现在可能满脑子都是\"他让我太难堪了\"或者\"真让我丢脸\"。试着觉察这些念头就好，这只是对他一时的看法，并不能代表他的全部。", time:"2:14" },
+      { type:'ai', text:"你现在可能满脑子都是\"他让我太难堪了\"或者\"真让我丢脸\"。试着觉察这些念头就好，这只是对自己一时的看法，并不能代表他的全部。", time:"2:14" },
       { type:'quick', options:["但这是事实！","我想让他听话！","我该怎么办？"] },
       { type:'pick', index:2, text:"我该怎么办？", time:"2:14" },
       { type:'typing' },
