@@ -3,70 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, follow">
-<title>ADHD Assessment for Children in Singapore – How Evaluation Is Conducted</title>
-<link rel="canonical" href="https://nightingalepediatrics.com/children-adhd-testing-singapore" />
-<meta name="description" content="A clinical guide to the ADHD assessment process in Singapore. Understand the difference between screening and diagnostic batteries, public vs. private options, and costs.">
+<title>Technology-Enhanced Care for Brilliant Young Minds</title>
 
-<link rel="preload" as="image" href="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/hero%20brain.svg">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": ["MedicalWebPage", "FAQPage"],
-  "name": "ADHD Assessment for Children in Singapore – How Evaluation Is Conducted",
-  "description": "Comprehensive guide on clinical evaluation for ADHD, distinguishing it from learning differences, and comparing public vs private options in Singapore.",
-  "provider": {
-    "@type": "MedicalClinic",
-    "name": "Nightingale Pediatrics"
-  },
-  "about": {
-    "@type": "MedicalCondition",
-    "name": "Attention Deficit Hyperactivity Disorder (ADHD)",
-    "alternateName": "ADHD"
-  },
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does ADHD testing cost in Singapore?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Costs vary by provider type. Subsidized public hospital evaluations generally range from $150 to $800 for citizens and permanent residents. Private psychology clinics typically charge between $1,800 and $3,500 for a full diagnostic battery."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How to get diagnosed with ADHD in Singapore?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Diagnosis requires a formal clinical evaluation. Families can obtain a referral from a polyclinic to a public hospital (such as KKH or NUH) or book an evaluation directly with a private psychologist or psychiatrist."
-      }
-    }
-  ]
-}
-</script>
+<meta name="description" content="Nightingale Pediatrics is a tech-assisted clinic for family mental health, leveraging AI and longitudinal analytics to support clinical care outcomes.">
+<meta property="og:description" content="Nightingale Pediatrics is a tech-assisted clinic for family mental health, leveraging AI and longitudinal analytics to support clinical care outcomes.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@300..700&display=swap" rel="stylesheet">
 
+<!-- Preload hero background SVG (retained from original) -->
+<link rel="preload" as="image" href="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/hero%20brain.svg">
+
 <style>
-  #gd-page {
+
+  #nightingale-layout {
     width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
   }
-  #gd-page *,
-  #gd-page *::before,
-  #gd-page *::after {
+
+  #nightingale-layout *,
+  #nightingale-layout *::before,
+  #nightingale-layout *::after {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
   }
 
   /* ---------- Design tokens ---------- */
-  #gd-page {
+  #nightingale-layout {
     --sand:#FAF9F6;
     --sand-deep:#F2EEE4;
     --sage:#4F6B4F;
@@ -79,528 +46,1121 @@
     --white:#FFFFFF;
     --serif: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
     --sans: 'Google Sans Flex', 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --max-w: 840px;
+    --max-w: 1180px;
 
     background: var(--sand);
     color: var(--charcoal);
     font-family: var(--sans);
     font-weight: 300;
-    line-height: 1.75;
+    line-height: 1.6;
   }
 
-  #gd-page img{ max-width:100%; display:block; }
-  #gd-page a{ text-decoration:none; color:inherit; }
-  #gd-page h1, #gd-page h2, #gd-page h3, #gd-page h4{
+  #nightingale-layout img{ max-width:100%; display:block; }
+  #nightingale-layout a{ text-decoration:none; color:inherit; }
+  #nightingale-layout h1,
+  #nightingale-layout h2,
+  #nightingale-layout h3,
+  #nightingale-layout h4{
     font-family: var(--serif);
     font-weight: 400;
     color: var(--charcoal);
     letter-spacing: -0.01em;
   }
-  #gd-page p, #gd-page li, #gd-page td{ font-size:1.03rem; color:var(--charcoal-soft); line-height:1.75; }
-  #gd-page :focus-visible{ outline:2px solid var(--sage-dark); outline-offset:3px; }
-
-  /* ---------- Top bar ---------- */
-  .n-topbar{
-    background: #FAF9F6;
-    border-bottom: 1px solid #E5E0D3;
-    font-family: var(--sans);
+  #nightingale-layout :focus-visible{
+    outline: 2px solid var(--sage-dark);
+    outline-offset: 3px;
   }
+
+  /* ---------- Top bar / logo ---------- */
+  .n-topbar{ background: var(--sand); border-bottom: 1px solid var(--line); }
   .n-topbar-inner{
-    max-width: 1180px;
+    max-width: var(--max-w);
     margin: 0 auto;
     padding: 18px 5%;
     display: flex;
     align-items: center;
-  }
-  .n-logo{ height: 38px; width: auto; }
-
-  /* ---------- Hero Section (Text Left, Large Round Avatars Right) ---------- */
-  .n-section-hero { 
-    background-color: #fff4ea; 
-    background-image: linear-gradient(rgba(255, 244, 234, 0.4), rgba(255, 244, 234, 0.4)), url('https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/hero%20brain.svg');
-    background-size: 45%; 
-    background-position: right 10% center;
-    background-repeat: no-repeat;
-    padding: 96px 5%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .n-hero-container {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 48px;
-    align-items: center;
-  }
-  .n-hero-content {
-    text-align: left;
-  }
-  .n-h1-hero {
-    font-family: var(--serif);
-    color: #1A2E3B;
-    font-size: clamp(2.2rem, 4vw, 3.6rem);
-    line-height: 1.15;
-    font-weight: 400;
-    margin: 0 0 20px 0;
-  }
-  .n-p-hero {
-    font-family: var(--sans);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    color: #2C3539;
-    margin: 0;
-  }
-  .n-hero-avatars {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
     gap: 24px;
   }
-  .n-hero-avatar {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid var(--white);
-    box-shadow: 0 12px 30px rgba(44, 53, 57, 0.15);
-    flex-shrink: 0;
+  .n-logo{ height: 38px; width: auto; flex-shrink: 0; }
+
+  /* ---------- Nav ---------- */
+  .n-nav{ display:flex; align-items:center; gap:28px; }
+  .n-nav-links{ display:flex; align-items:center; gap:26px; list-style:none; margin:0; padding:0; }
+  .n-nav-link{
+    font-family:var(--sans); font-size:0.94rem; font-weight:500;
+    color:var(--charcoal); white-space:nowrap;
+    padding:6px 0; position:relative;
+  }
+  .n-nav-link:hover{ color:var(--sage-dark); }
+
+  .n-nav-dropdown{ position:relative; }
+  .n-nav-dropdown-toggle{
+    display:inline-flex; align-items:center; gap:5px;
+    background:none; border:none; cursor:pointer;
+    font-family:var(--sans); font-size:0.94rem; font-weight:500;
+    color:var(--charcoal); padding:6px 0;
+  }
+  .n-nav-dropdown-toggle:hover{ color:var(--sage-dark); }
+  .n-nav-dropdown-toggle svg{ width:13px; height:13px; transition:transform .2s ease; }
+  .n-nav-dropdown.n-open .n-nav-dropdown-toggle svg{ transform:rotate(180deg); }
+
+  .n-nav-dropdown-menu{
+    position:absolute; top:calc(100% + 14px); left:50%; transform:translateX(-50%);
+    background:var(--white); border:1px solid var(--line); border-radius:16px;
+    box-shadow:0 18px 40px rgba(44,53,57,0.12);
+    padding:10px; min-width:250px;
+    opacity:0; visibility:hidden; transform:translateX(-50%) translateY(6px);
+    transition:opacity .2s ease, transform .2s ease, visibility .2s;
+    z-index:50;
+  }
+  .n-nav-dropdown.n-open .n-nav-dropdown-menu{
+    opacity:1; visibility:visible; transform:translateX(-50%) translateY(0);
+  }
+  .n-nav-dropdown-menu a{
+    display:block; padding:11px 14px; border-radius:10px;
+    font-size:0.92rem; color:var(--charcoal); font-weight:400;
+  }
+  .n-nav-dropdown-menu a:hover{ background:var(--sage-light); color:var(--sage-dark); }
+
+  .n-nav-cta{ flex-shrink:0; }
+
+  .n-nav-toggle{
+    display:none; background:none; border:none; cursor:pointer;
+    width:38px; height:38px; align-items:center; justify-content:center;
+    color:var(--charcoal); flex-shrink:0;
+  }
+  .n-nav-toggle svg{ width:24px; height:24px; }
+
+  .n-mobile-menu{
+    display:none; position:fixed; inset:0; z-index:300;
+    background:var(--sand); padding:20px 6%; overflow-y:auto;
+  }
+  .n-mobile-menu.n-open{ display:block; }
+  .n-mobile-menu-top{ display:flex; align-items:center; justify-content:space-between; margin-bottom:36px; }
+  .n-mobile-menu-close{ background:none; border:none; cursor:pointer; width:38px; height:38px; color:var(--charcoal); }
+  .n-mobile-menu-close svg{ width:26px; height:26px; }
+  .n-mobile-links{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px; }
+  .n-mobile-links a, .n-mobile-links .n-mobile-group-label{
+    display:block; padding:14px 4px; font-family:var(--serif); font-size:1.3rem;
+    color:var(--charcoal); border-bottom:1px solid var(--line);
+  }
+  .n-mobile-group-label{ font-family:var(--sans); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--sage-dark); border-bottom:none; padding-bottom:2px; padding-top:22px; font-weight:600; }
+  .n-mobile-links a.n-mobile-sub{ font-family:var(--sans); font-size:1.02rem; padding-left:16px; color:var(--charcoal-soft); }
+  .n-mobile-cta{ margin-top:28px; }
+
+  @media (max-width:900px){
+    .n-nav-links, .n-nav-cta{ display:none; }
+    .n-nav-toggle{ display:flex; }
   }
 
-  @media (max-width: 900px) {
-    .n-section-hero { 
-      background-size: 85%; 
-      padding: 64px 5%; 
-    }
-    .n-hero-container {
-      grid-template-columns: 1fr;
-      text-align: center;
-      gap: 32px;
-    }
-    .n-hero-content {
-      text-align: center;
-    }
-    .n-hero-avatars {
-      justify-content: center;
-    }
-    .n-hero-avatar {
-      width: 160px;
-      height: 160px;
-    }
+  .n-section{ position:relative; padding:100px 5%; }
+  .n-container{ width:100%; max-width:var(--max-w); margin:0 auto; position:relative; z-index:2; }
+
+  .n-section-sand{ background:var(--sand); }
+  .n-section-deep{ background:var(--sand-deep); }
+  .n-section-sage{ background:var(--sage); color:var(--white); overflow:hidden; }
+
+  .n-eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--sage-dark); font-weight:500; margin-bottom:16px;
+  }
+  .n-section-sage .n-eyebrow{ color:rgba(255,255,255,0.85); }
+
+  .n-h1{ font-size:clamp(2.2rem, 4vw, 3.6rem); line-height:1.1; margin:0 0 22px 0; }
+  .n-h2{ font-size:clamp(1.8rem, 2.6vw, 2.6rem); line-height:1.15; margin:0 0 18px 0; }
+  .n-h2.n-center{ text-align:center; }
+  .n-p{ font-size:1.05rem; color:var(--charcoal-soft); margin:0 0 16px 0; }
+  .n-p.n-lead{ font-size:1.18rem; max-width:680px; }
+  .n-section-sage .n-p{ color:rgba(255,255,255,0.88); }
+
+  .n-head{ max-width:760px; margin:0 auto 56px auto; text-align:center; }
+
+  /* ---------- Buttons ---------- */
+  .n-btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:16px 34px; background:var(--sage); color:var(--white) !important;
+    font-family:var(--sans); font-weight:500; font-size:1rem;
+    border-radius:100px; border:1px solid var(--sage); cursor:pointer;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    box-shadow:0 6px 20px rgba(79,107,79,0.22);
+  }
+  .n-btn:hover{ background:var(--sage-dark); border-color:var(--sage-dark); transform:translateY(-2px); box-shadow:0 10px 26px rgba(79,107,79,0.28); }
+  .n-btn-white{ background:var(--white); color:var(--sage-dark) !important; border-color:var(--white); box-shadow:0 10px 26px rgba(0,0,0,0.15); }
+  .n-btn-white:hover{ background:var(--sand); }
+  .n-btn-small{ padding:11px 24px; font-size:0.9rem; }
+  .n-microcopy{ margin-top:16px; font-size:0.88rem; color:var(--charcoal-soft); }
+  .n-section-sage .n-microcopy{ color:rgba(255,255,255,0.75); }
+
+  /* ---------- Ambient blobs ---------- */
+  .n-blob{ position:absolute; z-index:0; pointer-events:none; opacity:0.9; }
+  @media (prefers-reduced-motion: no-preference){
+    .n-blob-drift{ animation:n-drift 28s ease-in-out infinite alternate; }
+  }
+  @keyframes n-drift{
+    0%{ transform:translate(0,0) scale(1) rotate(0deg); }
+    100%{ transform:translate(14px,-16px) scale(1.04) rotate(3deg); }
   }
 
-  @media (max-width: 480px) {
-    .n-hero-avatar {
-      width: 120px;
-      height: 120px;
-    }
-    .n-hero-avatars {
-      gap: 12px;
-    }
+  /* ---------- Hero ---------- */
+  .n-hero{ padding:96px 5% 90px; overflow:hidden; }
+  .n-hero-inner{ max-width:760px; margin:0 auto; text-align:center; position:relative; z-index:2; }
+  .n-hero-watermark{
+    position:absolute; top:-40px; left:50%; transform:translateX(-50%);
+    width:640px; max-width:140%; opacity:0.07; filter:grayscale(1) contrast(1.1);
+    z-index:1; pointer-events:none;
   }
+  @media (max-width:640px){ .n-hero-watermark{ width:420px; } }
 
-  /* ---------- Content container ---------- */
-  .gd-container{ max-width:var(--max-w); margin:64px auto; padding:0 5%; }
-
-  .gd-section{ margin-bottom:56px; }
-  .gd-section h2{
-    font-size:1.62rem; border-bottom:2px solid var(--line); padding-bottom:14px; margin-bottom:22px;
+  /* ---------- Hero carousel ---------- */
+  .n-carousel-wrap{ position:relative; max-width:1080px; margin:56px auto 0; }
+  .n-carousel{
+    display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory;
+    scrollbar-width:none; -ms-overflow-style:none; padding:6px 4px 10px;
   }
-
-  /* ---------- Purpose box ---------- */
-  .gd-purpose-box{
-    background:var(--sand-deep); padding:28px 30px; border-radius:14px;
-    margin-bottom:48px;
+  .n-carousel::-webkit-scrollbar{ display:none; }
+  .n-carousel-card{
+    scroll-snap-align:start; flex:0 0 82%; max-width:340px;
+    background:var(--white); border-radius:24px; border:1px solid var(--line);
+    padding:36px 30px; text-align:left; box-shadow:0 18px 40px rgba(44,53,57,0.06);
+    display:flex; flex-direction:column; transition:transform .3s ease, box-shadow .3s ease;
   }
-  .gd-purpose-box p{ margin:0; color:var(--charcoal); }
-
-  /* ---------- Lists ---------- */
-  #gd-page ul, #gd-page ol{ margin-bottom:22px; padding-left:24px; }
-  #gd-page li{ margin-bottom:9px; }
-  #gd-page li strong{ color:var(--charcoal); }
-
-  /* ---------- Table ---------- */
-  .gd-table-wrap{
-    overflow-x:auto; border-radius:14px;
-    box-shadow:0 12px 36px rgba(44,53,57,0.06);
-    margin:36px 0;
+  .n-carousel-card:hover{ transform:translateY(-4px); box-shadow:0 22px 46px rgba(44,53,57,0.1); }
+  @media (min-width:720px){ .n-carousel-card{ flex:0 0 calc(33.333% - 16px); } }
+  .n-carousel-icon{
+    width:52px; height:52px; border-radius:50%; background:var(--sage-light);
+    display:flex; align-items:center; justify-content:center; margin-bottom:22px; flex-shrink:0;
   }
-  .gd-table{ width:100%; border-collapse:collapse; background:var(--white); min-width:560px; }
-  .gd-table th{
-    background:var(--sage); color:var(--white); padding:18px;
-    text-align:left; font-family:var(--serif); font-size:1.04rem; font-weight:400;
+  .n-carousel-icon svg{ width:24px; height:24px; stroke:var(--sage-dark); }
+  .n-carousel-card h3{ font-size:1.28rem; margin:0 0 10px 0; }
+  .n-carousel-card p{ font-size:0.96rem; color:var(--charcoal-soft); margin:0 0 20px 0; flex:1; }
+  .n-carousel-link{
+    display:inline-flex; align-items:center; gap:6px; font-family:var(--sans);
+    font-weight:500; font-size:0.92rem; color:var(--sage-dark);
+    border-bottom:1px solid var(--sage-dark); padding-bottom:2px; align-self:flex-start;
   }
-  .gd-table th span{ font-size:0.82rem; font-weight:300; opacity:0.85; }
-  .gd-table td{ padding:18px; border-bottom:1px solid var(--sand-deep); vertical-align:top; font-size:0.95rem; }
-  .gd-table tr:last-child td{ border-bottom:none; }
-  .gd-table tr:nth-child(even){ background:var(--sand-deep); }
+  .n-carousel-link svg{ width:14px; height:14px; transition:transform .2s ease; }
+  .n-carousel-link:hover svg{ transform:translateX(3px); }
+
+  .n-carousel-controls{ display:flex; align-items:center; justify-content:center; gap:18px; margin-top:28px; }
+  .n-carousel-controls.n-controls-hidden{ display:none; }
+  .n-carousel-arrow{
+    width:42px; height:42px; border-radius:50%; border:1px solid var(--line);
+    background:var(--white); color:var(--sage-dark); display:flex;
+    align-items:center; justify-content:center; cursor:pointer;
+    transition:background .2s ease, transform .2s ease; flex-shrink:0;
+  }
+  .n-carousel-arrow:hover{ background:var(--sage-light); }
+  .n-carousel-arrow svg{ width:18px; height:18px; }
+  .n-carousel-dots{ display:flex; gap:8px; }
+  .n-carousel-dot{
+    width:8px; height:8px; border-radius:50%; background:var(--line);
+    border:none; padding:0; cursor:pointer; transition:background .2s ease, transform .2s ease;
+  }
+  .n-carousel-dot.active{ background:var(--sage); transform:scale(1.3); }
+
+  /* ---------- Protocol / journey ---------- */
+  .n-protocol{ display:flex; flex-direction:column; gap:90px; margin-top:20px; }
+  .n-protocol-step{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center; }
+  .n-protocol-step.n-reverse .n-protocol-media{ order:2; }
+  .n-protocol-step.n-reverse .n-protocol-copy{ order:1; }
+  .n-protocol-media{ position:relative; display:flex; justify-content:center; overflow:hidden; }
+  .n-protocol-blob{ position:absolute; inset:0; z-index:0; }
+  .n-protocol-photo{
+    position:relative; z-index:1; width:82%; aspect-ratio:1/1; object-fit:cover;
+    border-radius:42% 58% 61% 39% / 51% 44% 56% 49%; background:var(--white); border:1px solid var(--line);
+  }
+  .n-protocol-num{ font-family:var(--serif); font-size:2.8rem; color:var(--terracotta); opacity:0.75; line-height:1; margin-bottom:14px; }
+  .n-protocol-copy h3{ font-size:1.5rem; margin-bottom:16px; }
+  .n-protocol-consultants{ background:var(--sand-deep); border-radius:16px; padding:22px 26px; margin-top:20px; }
+  .n-protocol-consultants h4{ font-family:var(--sans); font-weight:600; font-size:0.95rem; color:var(--sage-dark); margin:0 0 12px 0; }
+  .n-protocol-consultants ul{ margin:0; padding-left:20px; columns:2; column-gap:20px; font-size:0.92rem; color:var(--charcoal-soft); }
+  .n-protocol-consultants li{ margin-bottom:6px; }
+
+  /* ---------- Tech / clinical grid ---------- */
+  .n-grid-3{ display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; }
+  .n-card{ background:var(--white); border:1px solid var(--line); border-radius:20px; padding:34px 28px; box-shadow:0 10px 28px rgba(44,53,57,0.04); }
+  .n-card-icon{ width:52px; height:52px; background:var(--sage-light); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:20px; }
+  .n-card-icon svg{ width:24px; height:24px; stroke:var(--sage-dark); }
+  .n-card h3{ font-size:1.18rem; margin:0 0 10px 0; }
+  .n-card p{ font-size:0.96rem; color:var(--charcoal-soft); margin:0; }
+
+  /* ---------- Quiz ---------- */
+  .n-quiz{
+    background:var(--white); border:1px solid var(--line); border-radius:24px;
+    box-shadow:0 18px 44px rgba(44,53,57,0.06); padding:48px 40px; max-width:640px;
+    margin:0 auto; text-align:center; position:relative; min-height:280px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .n-quiz-step{ display:none; width:100%; animation:n-slide .3s ease-out forwards; }
+  .n-quiz-step.active{ display:block; }
+  @keyframes n-slide{ from{ opacity:0; transform:translateX(16px);} to{ opacity:1; transform:translateX(0);} }
+  .n-quiz-progress{ position:absolute; top:20px; right:24px; font-size:0.78rem; color:var(--charcoal-soft); font-weight:500; }
+  .n-quiz-step h3{ font-size:1.4rem; margin-bottom:14px; }
+  .n-quiz-options{ display:flex; justify-content:center; gap:16px; margin-top:26px; }
+  .n-quiz-btn{
+    padding:12px 30px; border:1px solid var(--sage-dark); border-radius:100px;
+    background:transparent; color:var(--sage-dark); font-family:var(--sans);
+    font-weight:500; cursor:pointer; transition:background .2s ease, color .2s ease; font-size:0.96rem;
+  }
+  .n-quiz-btn:hover{ background:var(--sage); color:var(--white); border-color:var(--sage); }
+  .n-quiz-icon{ width:52px; height:52px; border-radius:50%; background:var(--sage-light); display:flex; align-items:center; justify-content:center; margin:0 auto 18px auto; }
+  .n-quiz-icon svg{ width:24px; height:24px; stroke:var(--sage-dark); }
 
   /* ---------- FAQ ---------- */
-  .gd-faq-list{ margin-top:6px; }
-  details.gd-faq-item{
-    background:var(--sand-deep); border:1px solid var(--line); border-radius:14px;
-    padding:20px 24px; margin-bottom:14px; transition:border-color .2s ease;
+  .n-faq-list{ max-width:760px; margin:0 auto; }
+  details.n-faq{ background:var(--white); border:1px solid var(--line); border-radius:16px; padding:22px 26px; margin-bottom:14px; }
+  details.n-faq summary{
+    font-family:var(--serif); font-size:1.1rem; color:var(--charcoal); cursor:pointer;
+    list-style:none; display:flex; align-items:center; justify-content:space-between; gap:16px;
   }
-  details.gd-faq-item:hover{ border-color:var(--sage); }
-  details.gd-faq-item summary{
-    font-weight:600; color:var(--charcoal); font-size:1.02rem;
-    list-style:none; outline:none; cursor:pointer;
-    display:flex; align-items:center; justify-content:space-between; gap:16px;
-  }
-  details.gd-faq-item summary::-webkit-details-marker{ display:none; }
-  details.gd-faq-item summary::after{
-    content:"+"; font-family:var(--sans); font-size:1.3rem; color:var(--sage-dark);
-    flex-shrink:0; transition:transform .2s ease;
-  }
-  details.gd-faq-item[open] summary::after{ transform:rotate(45deg); }
-  details.gd-faq-item p{ margin-top:14px; margin-bottom:0; font-size:0.96rem; }
-
-  /* ---------- Contact Form with Captcha ---------- */
-  .gd-contact-section{
-    margin-top:56px; padding:36px 30px; background:var(--sand-deep);
-    border-radius:16px; border:1px solid var(--line); text-align:left;
-  }
-  .gd-contact-section h3{ font-size:1.4rem; margin:0 0 10px 0; }
-  .gd-contact-section p{ margin:0 0 24px 0; font-size:0.96rem; }
-  .gd-contact-form{ display:flex; flex-direction:column; gap:16px; max-width:560px; margin:0 auto; }
-  .gd-form-group{ display:flex; flex-direction:column; gap:6px; text-align:left; }
-  .gd-form-group label{ font-size:0.9rem; font-weight:500; color:var(--charcoal); }
-  .gd-form-group input, .gd-form-group textarea{
-    padding:12px 16px; border-radius:8px; border:1px solid var(--line);
-    font-family:var(--sans); font-size:0.95rem; background:var(--white);
-    color:var(--charcoal); outline:none;
-  }
-  .gd-form-group input:focus, .gd-form-group textarea:focus{ border-color:var(--sage-dark); }
-  .gd-btn{
-    display:inline-flex; align-items:center; justify-content:center; gap:8px;
-    padding:15px 32px; background:var(--sage); color:var(--white) !important;
-    font-family:var(--sans); font-weight:500; font-size:0.98rem;
-    border-radius:100px; border:1px solid var(--sage); cursor:pointer;
-    transition:all .25s ease; box-shadow:0 6px 20px rgba(79,107,79,0.22); margin-top:8px;
-  }
-  .gd-btn:hover{ background:var(--sage-dark); border-color:var(--sage-dark); transform:translateY(-2px); }
-
-  /* ---------- Footer note ---------- */
-  .gd-footer-note{
-    text-align:center; margin-top:56px; padding-top:28px;
-    border-top:1px solid var(--line);
-  }
-  .gd-footer-note p{ font-style:italic; font-size:0.9rem; color:var(--charcoal-soft); max-width:600px; margin:0 auto; }
+  details.n-faq summary::-webkit-details-marker{ display:none; }
+  details.n-faq summary::after{ content:"+"; font-family:var(--sans); font-size:1.3rem; color:var(--sage-dark); flex-shrink:0; transition:transform .2s ease; }
+  details.n-faq[open] summary::after{ transform:rotate(45deg); }
+  details.n-faq p{ margin-top:14px; }
 
   /* ---------- Reveal on scroll ---------- */
-  .gd-reveal{ opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s ease; }
-  .gd-reveal.in-view{ opacity:1; transform:translateY(0); }
-  @media (prefers-reduced-motion: reduce){ .gd-reveal{ opacity:1; transform:none; transition:none; } }
+  .n-reveal{ opacity:0; transform:translateY(18px); transition:opacity .8s ease, transform .8s ease; }
+  .n-reveal.in-view{ opacity:1; transform:translateY(0); }
+  @media (prefers-reduced-motion: reduce){
+    .n-reveal{ opacity:1; transform:none; transition:none; }
+    .n-blob-drift{ animation:none; }
+  }
 
-  /* ---------- WhatsApp Widget ---------- */
-  .wa-widget {
-    position: fixed;
-    right: 22px;
-    bottom: 22px;
-    z-index: 200;
+  /* ---------- Responsive ---------- */
+  @media (max-width:960px){
+    .n-section{ padding:76px 6%; }
+    .n-protocol-step, .n-protocol-step.n-reverse{ grid-template-columns:1fr; text-align:center; }
+    .n-protocol-step .n-protocol-media, .n-protocol-step.n-reverse .n-protocol-media{ order:-1; }
+    .n-protocol-consultants ul{ columns:1; text-align:left; }
+    .n-protocol-photo{ width:56%; }
+    .n-grid-3{ grid-template-columns:1fr; gap:22px; }
   }
-  .wa-button {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    background: #25D366;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 26px rgba(0,0,0,0.22);
-    transition: transform .2s ease;
+  @media (max-width:600px){
+    .n-h1{ font-size:2rem; }
+    .n-hero{ padding:64px 5% 60px; }
+    .n-section{ padding:64px 6%; }
+    .n-quiz{ padding:36px 24px; }
+    .n-quiz-options{ flex-direction:column; }
+    .n-btn{ width:100%; }
+    .n-carousel-card{ flex:0 0 88%; }
   }
-  .wa-button:hover { transform: scale(1.06); }
-  .wa-button svg { width: 28px; height: 28px; fill: #ffffff; }
 
-  /* ---------- Footer Styles ---------- */
-  #nightingale-footer {
-    font-family: var(--sans);
-    font-weight: 300;
-    background-color: #4F6B4F;
-    color: #ffffff;
-    padding: 48px 5% 36px;
-    border-top: 4px solid #FAF9F6;
-  }
-  .footer-clean-content {
-    max-width: 860px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 0.85rem;
-    line-height: 1.65;
-    color: rgba(255, 255, 255, 0.88);
-  }
-  .footer-clean-content p { margin-bottom: 16px; color: rgba(255, 255, 255, 0.88); }
-  .footer-address {
-    font-style: normal;
-    font-size: 0.85rem;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.82);
-    margin: 16px 0;
-  }
-  .footer-clean-bottom {
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.75);
-  }
 </style>
 </head>
 <body>
 
-<div id="gd-page">
+<div id="nightingale-layout">
 
+  <!-- ================= TOP BAR / LOGO ================= -->
   <header class="n-topbar">
     <div class="n-topbar-inner">
-      <img class="n-logo" src="/images/black-nightingale-logo.png" alt="Nightingale Pediatrics">
+      <a href="https://nightingalepediatrics.com/">
+        <img class="n-logo" src="/images/black-nightingale-logo.png" alt="Nightingale Pediatrics">
+      </a>
+
+      <nav class="n-nav" aria-label="Primary">
+        <ul class="n-nav-links">
+          <li><a class="n-nav-link" href="/screening">Screening</a></li>
+          <li class="n-nav-dropdown" id="assessmentsDropdown">
+            <button type="button" class="n-nav-dropdown-toggle" id="assessmentsToggle" aria-expanded="false">
+              Assessments
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="n-nav-dropdown-menu">
+              <a href="/neurodevelopmental-assessment">ADHD &amp; Autism Diagnosis</a>
+              <a href="/academic-assessment">IQ &amp; School Readiness</a>
+              <a href="/diagnosis">Full Diagnostics Overview</a>
+            </div>
+          </li>
+          <li><a class="n-nav-link" href="/pricing">Pricing</a></li>
+          <li><a class="n-nav-link" href="/children-adhd-testing-singapore">ADHD Guide</a></li>
+          <li><a class="n-nav-link" href="/bonfire-ai">Bonfire AI</a></li>
+        </ul>
+        <a href="https://wa.me/6582228505" class="n-btn n-btn-small n-nav-cta">Book Intake</a>
+      </nav>
+
+      <button type="button" class="n-nav-toggle" id="mobileMenuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </header>
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="n-section-hero">
-    <div class="n-hero-container">
-      <div class="n-hero-content">
-        <h1 class="n-h1-hero">Technology-Enhanced Care for <br>Young Minds.</h1>
-        <p class="n-p-hero">Comprehensive pediatric mental health for families.</p>
+  <div class="n-mobile-menu" id="mobileMenu">
+    <div class="n-mobile-menu-top">
+      <img class="n-logo" src="/images/black-nightingale-logo.png" alt="Nightingale Pediatrics">
+      <button type="button" class="n-mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <ul class="n-mobile-links">
+      <li><a href="/screening">Screening</a></li>
+      <li><span class="n-mobile-group-label">Assessments</span></li>
+      <li><a class="n-mobile-sub" href="/neurodevelopmental-assessment">ADHD &amp; Autism Diagnosis</a></li>
+      <li><a class="n-mobile-sub" href="/academic-assessment">IQ &amp; School Readiness</a></li>
+      <li><a class="n-mobile-sub" href="/diagnosis">Full Diagnostics Overview</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/children-adhd-testing-singapore">ADHD Guide</a></li>
+      <li><a href="/bonfire-ai">Bonfire AI</a></li>
+    </ul>
+    <a href="https://wa.me/6582228505" class="n-btn n-mobile-cta">Book Intake</a>
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <section class="n-section n-hero">
+    <img class="n-hero-watermark" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/hero%20brain.svg" alt="" aria-hidden="true" onerror="this.style.display='none'">
+    <svg class="n-blob n-blob-drift" style="top:-60px; left:-100px; width:360px; height:360px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#E8EFE3" d="M52,-58C66,-46,74,-25,75,-3C76,19,70,42,55,56C40,70,17,76,-6,79C-29,82,-53,81,-66,67C-79,53,-81,25,-78,0C-75,-25,-67,-49,-51,-62C-35,-75,-11,-77,10,-77C31,-77,38,-70,52,-58Z" transform="translate(100 100)"/>
+    </svg>
+    <svg class="n-blob n-blob-drift" style="top:40px; right:-120px; width:340px; height:340px; opacity:0.55;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#C97B5A" d="M46,-52C58,-42,64,-23,66,-3C68,16,66,35,54,48C42,61,21,69,-2,71C-25,73,-50,69,-63,54C-76,39,-77,14,-73,-9C-69,-32,-60,-53,-45,-63C-29,-73,-15,-72,3,-75C21,-78,34,-62,46,-52Z" transform="translate(100 100)"/>
+    </svg>
+
+    <div class="n-hero-inner n-reveal in-view">
+      <span class="n-eyebrow" style="justify-content:center; display:flex;">Nightingale Pediatrics</span>
+      <h1 class="n-h1">Technology-Enhanced Care for Young Minds.</h1>
+      <p class="n-p n-lead" style="margin-left:auto; margin-right:auto;">Comprehensive pediatric mental health for families.</p>
+      <a href="https://calendly.com/meeting-with-nightingale/concierge" class="n-btn">Book Your Intake Call Today</a>
+      <p class="n-microcopy">Get clarity in 15 minutes.</p>
+    </div>
+
+    <!-- Carousel: our 3 key focus areas -->
+    <div class="n-carousel-wrap n-reveal in-view">
+      <div class="n-carousel" id="focusCarousel">
+
+        <div class="n-carousel-card" data-wa-message="Hi Nightingale, I'd like to learn more about Bonfire AI.">
+          <div class="n-carousel-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg>
+          </div>
+          <h3>Bonfire AI</h3>
+          <p>AI self-regulation coach trained by our clinical team. Available 24/7.</p>
+          <a href="/bonfire-ai" class="n-carousel-link">Explore Bonfire AI <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="n-carousel-card" data-wa-message="Hi Nightingale, I'd like to know more about Screening for my child.">
+          <div class="n-carousel-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3>Comprehensive Screening</h3>
+          <p>Home-based screening for indicators of ADHD, ASD, and behavioral issues.</p>
+          <a href="https://nightingalepediatrics.com/screening" class="n-carousel-link">Explore Screening <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="n-carousel-card" data-wa-message="Hi Nightingale, I'd like to know more about Psychological Assessments.">
+          <div class="n-carousel-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </div>
+          <h3>Psychological Assessment</h3>
+          <p>IQ, ADHD, or ASD assessments from $2K. Available online too.</p>
+          <a href="https://nightingalepediatrics.com/diagnosis/" class="n-carousel-link">Explore Psychological Assessment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
       </div>
-      <div class="n-hero-avatars">
-        <img src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/friend1.png" alt="Nightingale Care" class="n-hero-avatar">
-        <img src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/friend2.png" alt="Nightingale Support" class="n-hero-avatar">
+
+      <div class="n-carousel-controls">
+        <button type="button" class="n-carousel-arrow" id="carouselPrev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="n-carousel-dots" id="carouselDots">
+          <button type="button" class="n-carousel-dot active" data-index="0" aria-label="Slide 1"></button>
+          <button type="button" class="n-carousel-dot" data-index="1" aria-label="Slide 2"></button>
+          <button type="button" class="n-carousel-dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+        <button type="button" class="n-carousel-arrow" id="carouselNext" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
       </div>
     </div>
   </section>
 
-  <div class="gd-container">
+  <!-- ================= THE NIGHTINGALE PROTOCOL ================= -->
+  <section class="n-section n-section-deep">
+    <div class="n-container">
+      <div class="n-head n-reveal">
+        <span class="n-eyebrow" style="justify-content:center; display:flex;">The Nightingale Protocol</span>
+        <h2 class="n-h2 n-center">Coordinated Continuity of Care</h2>
+        <p class="n-p n-lead" style="margin-left:auto; margin-right:auto;">Supported by data and clinical practice.</p>
+      </div>
 
-    <div class="gd-purpose-box gd-reveal">
-      <p>This page details how pediatric ADHD assessments are conducted in Singapore, outlining the components of multi-disciplinary evaluation and differentiating ADHD from co-occurring learning or emotional factors.</p>
+      <div class="n-protocol">
+
+        <div class="n-protocol-step n-reveal">
+          <div class="n-protocol-media">
+            <svg class="n-protocol-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#E8EFE3" d="M48,-55C61,-45,69,-27,71,-8C73,10,70,29,59,44C48,59,29,70,8,73C-13,76,-38,71,-53,57C-68,43,-73,20,-72,-3C-71,-26,-64,-49,-49,-60C-34,-71,-11,-70,7,-73C25,-76,35,-65,48,-55Z" transform="translate(100 100)"/>
+            </svg>
+            <img class="n-protocol-photo" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/intake.png" alt="Clinical Intake" loading="lazy" decoding="async" fetchpriority="high" onerror="this.style.display='none'">
+          </div>
+          <div class="n-protocol-copy">
+            <div class="n-protocol-num">1</div>
+            <h3>Understanding Your Needs</h3>
+            <p class="n-p">The journey begins with an initial 15-minute intake call. You do not need a diagnosis to start.</p>
+            <p class="n-p">We use this time to understand your concerns and guide you to appropriate next steps, providing clarity on your clinical pathway.</p>
+            <a href="https://calendly.com/meeting-with-nightingale/concierge" class="n-btn n-btn-small">Book Intake</a>
+          </div>
+        </div>
+
+        <div class="n-protocol-step n-reverse n-reveal">
+          <div class="n-protocol-media">
+            <svg class="n-protocol-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#C97B5A" fill-opacity="0.25" d="M46,-52C58,-42,64,-23,66,-3C68,16,66,35,54,48C42,61,21,69,-2,71C-25,73,-50,69,-63,54C-76,39,-77,14,-73,-9C-69,-32,-60,-53,-45,-63C-29,-73,-15,-72,3,-75C21,-78,34,-62,46,-52Z" transform="translate(100 100)"/>
+            </svg>
+            <img class="n-protocol-photo" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/assessment.png" alt="Clinical Assessment" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          </div>
+          <div class="n-protocol-copy">
+            <div class="n-protocol-num">2</div>
+            <h3>Validating With Data</h3>
+            <p class="n-p">For many concerns, we start with a standardized screening process. Based on the screening results, the next steps may include an in-depth consultation, a diagnostic test, or classroom observations.</p>
+            <p class="n-p">We support parents and children throughout the assessment pathway to ensure they are well-informed during the testing process.</p>
+          </div>
+        </div>
+
+        <div class="n-protocol-step n-reveal">
+          <div class="n-protocol-media">
+            <svg class="n-protocol-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#E8EFE3" d="M50,-56C64,-45,72,-25,73,-4C74,17,68,38,54,52C40,66,19,74,-3,77C-25,80,-49,78,-63,64C-77,50,-81,24,-79,0C-77,-24,-70,-48,-54,-60C-38,-72,-13,-72,7,-75C27,-78,36,-67,50,-56Z" transform="translate(100 100)"/>
+            </svg>
+            <img class="n-protocol-photo" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/friend2.png" alt="Intervention" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          </div>
+          <div class="n-protocol-copy">
+            <div class="n-protocol-num">3</div>
+            <h3>Designing The Care Plan</h3>
+            <p class="n-p">Based on the data, we build an individualised care plan involving our multi-disciplinary team.</p>
+            <div class="n-protocol-consultants">
+              <h4>Our consultants include:</h4>
+              <ul>
+                <li>Psychologist</li>
+                <li>Art Therapist</li>
+                <li>Occupational Therapist</li>
+                <li>Couple Therapist</li>
+                <li>Executive Coach</li>
+                <li>Psychiatrist (Coming Soon)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="n-protocol-step n-reverse n-reveal">
+          <div class="n-protocol-media">
+            <svg class="n-protocol-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#C97B5A" fill-opacity="0.25" d="M48,-55C61,-45,69,-27,71,-8C73,10,70,29,59,44C48,59,29,70,8,73C-13,76,-38,71,-53,57C-68,43,-73,20,-72,-3C-71,-26,-64,-49,-49,-60C-34,-71,-11,-70,7,-73C25,-76,35,-65,48,-55Z" transform="translate(100 100)"/>
+            </svg>
+            <img class="n-protocol-photo" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/friend1.png" alt="Maintenance" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          </div>
+          <div class="n-protocol-copy">
+            <div class="n-protocol-num">4</div>
+            <h3>Ongoing Education Through AI</h3>
+            <p class="n-p">Care continues after the sessions end. We provide support options to reinforce the strategies discussed.</p>
+            <p class="n-p">To support your ongoing progress, Bonfire AI — your AI coach for self-regulation — can also check in with you automatically to help you build stronger self-regulation habits.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLINICAL CARE MEETS TECHNOLOGY ================= -->
+  <section class="n-section n-section-sand">
+    <div class="n-container">
+      <div class="n-head n-reveal">
+        <span class="n-eyebrow" style="justify-content:center; display:flex;">Clinical Care Meets Technology</span>
+        <h2 class="n-h2 n-center">Ethical AI To Improve Outcomes</h2>
+        <p class="n-p n-lead" style="margin-left:auto; margin-right:auto;">AI and longitudinal analytics have the potential to improve access and care outcomes. We ensure these technologies are used ethically.</p>
+      </div>
+      <div class="n-grid-3">
+        <div class="n-card n-reveal">
+          <div class="n-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Digital Clinical Tools</h3>
+          <p>Digital screeners and AI tools assist our clinicians, providing data to track your child's progress efficiently.</p>
+        </div>
+        <div class="n-card n-reveal">
+          <div class="n-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 5-3 8.5-7 9.5C8 20.5 5 17 5 12V7z"/></svg>
+          </div>
+          <h3>Private &amp; Confidential</h3>
+          <p>We use HIPAA and GDPR-compliant tools, and any AI-assisted analysis is conducted on de-identified data only.</p>
+        </div>
+        <div class="n-card n-reveal">
+          <div class="n-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
+          </div>
+          <h3>Available 24/7</h3>
+          <p>Access Bonfire AI — your AI coach for self-regulation — for support and guidance between your clinical sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUIZ ================= -->
+  <section class="n-section n-section-deep">
+    <div class="n-container">
+      <div class="n-head n-reveal">
+        <h2 class="n-h2 n-center">Is an Intake Right for You?</h2>
+        <p class="n-p n-lead" style="margin-left:auto; margin-right:auto;">Answer 3 questions to see if an intake call is recommended.</p>
+      </div>
+
+      <div class="n-quiz n-reveal">
+        <div id="q1" class="n-quiz-step active">
+          <span class="n-quiz-progress">1 / 3</span>
+          <h3>School Feedback</h3>
+          <p class="n-p">Have teachers mentioned concerns about your child's attention, behavior, or ability to keep up with peers?</p>
+          <div class="n-quiz-options">
+            <button class="n-quiz-btn" onclick="nightingaleNextQuestion('q1', 'q2', true)">Yes</button>
+            <button class="n-quiz-btn" onclick="nightingaleNextQuestion('q1', 'q2', false)">No</button>
+          </div>
+        </div>
+        <div id="q2" class="n-quiz-step">
+          <span class="n-quiz-progress">2 / 3</span>
+          <h3>Home Life</h3>
+          <p class="n-p">Are you noticing frequent meltdowns, intense anxiety, or difficulties with daily routines (sleep, homework)?</p>
+          <div class="n-quiz-options">
+            <button class="n-quiz-btn" onclick="nightingaleNextQuestion('q2', 'q3', true)">Yes</button>
+            <button class="n-quiz-btn" onclick="nightingaleNextQuestion('q2', 'q3', false)">No</button>
+          </div>
+        </div>
+        <div id="q3" class="n-quiz-step">
+          <span class="n-quiz-progress">3 / 3</span>
+          <h3>Unexplained Changes</h3>
+          <p class="n-p">Has your child experienced a drop in grades, confidence, or interest in school?</p>
+          <div class="n-quiz-options">
+            <button class="n-quiz-btn" onclick="nightingaleShowResult('q3', true)">Yes</button>
+            <button class="n-quiz-btn" onclick="nightingaleShowResult('q3', false)">No</button>
+          </div>
+        </div>
+        <div id="result-book" class="n-quiz-step">
+          <div class="n-quiz-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3>We Recommend an Intake.</h3>
+          <p class="n-p">Based on your answers, speaking with our team could provide the clarity you need.</p>
+          <a href="https://calendly.com/meeting-with-nightingale/concierge" class="n-btn" style="margin-top:8px;">Book Intake</a>
+        </div>
+        <div id="result-resources" class="n-quiz-step">
+          <h3>You're likely on track!</h3>
+          <p class="n-p">It sounds like things are stable right now. However, you can still access our AI parenting tools or Masterclasses for extra support.</p>
+          <a href="https://nightingalepediatrics.com/masterclass" class="n-btn" style="margin-top:8px;">View Parenting Resources</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="n-section n-section-deep">
+    <div class="n-container">
+      <div class="n-head n-reveal">
+        <h2 class="n-h2 n-center">FAQ</h2>
+      </div>
+      <div class="n-faq-list n-reveal">
+        <details class="n-faq">
+          <summary>Do I need a diagnosis before booking?</summary>
+          <p class="n-p">No. The intake is for families who are seeking a clinical pathway for their concerns.</p>
+        </details>
+        <details class="n-faq">
+          <summary>What ages do you see?</summary>
+          <p class="n-p">We support children from babies or birth onwards, depending on the concern and pathway.</p>
+        </details>
+        <details class="n-faq">
+          <summary>Do you assess other conditions besides ADHD?</summary>
+          <p class="n-p">Yes, we can assess a range of behavioral, emotional, learning, and developmental conditions. These include but are not limited to Autism, Learning Disabilities, Anxiety, Depression, and more.</p>
+        </details>
+        <details class="n-faq">
+          <summary>Will you work with my child's school?</summary>
+          <p class="n-p">Yes, with your consent. We align next steps so support is consistent across settings.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="n-section n-section-sage" data-wa-message="Hi Nightingale, I'd like to book my intake call.">
+    <svg class="n-blob" style="bottom:-140px; left:-100px; width:420px; height:420px; opacity:0.2;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#FFFFFF" d="M50,-56C64,-45,72,-25,73,-4C74,17,68,38,54,52C40,66,19,74,-3,77C-25,80,-49,78,-63,64C-77,50,-81,24,-79,0C-77,-24,-70,-48,-54,-60C-38,-72,-13,-72,7,-75C27,-78,36,-67,50,-56Z" transform="translate(100 100)"/>
+    </svg>
+    <div class="n-container" style="max-width:680px; text-align:center;">
+      <div class="n-reveal">
+        <h2 class="n-h2" style="color:var(--white);">Start With a 15-Minute Intake Call.</h2>
+        <p class="n-p">We will guide you on your care options and clinical pathway.</p>
+        <a href="https://calendly.com/meeting-with-nightingale/concierge" class="n-btn n-btn-white">Book Your Intake Call Today</a>
+        <p class="n-microcopy">Contact us today to schedule your consultation.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<style>
+  /* --- FOOTER --- */
+  #nightingale-footer {
+    --f-sage: #4F6B4F;
+    --f-sage-dark: #3B5240;
+    --f-sand: #FAF9F6;
+    --f-text: #ffffff;
+    --f-text-dim: rgba(255, 255, 255, 0.72);
+    --f-sans: 'Google Sans Flex', 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --f-serif: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+
+    font-family: var(--f-sans);
+    font-weight: 300;
+    background-color: var(--f-sage);
+    color: var(--f-text);
+    padding: 72px 5% 36px;
+    border-top: 4px solid var(--f-sand);
+  }
+
+  #nightingale-footer * { box-sizing: border-box; }
+  #nightingale-footer a { text-decoration: none; color: var(--f-text) !important; transition: 0.2s; }
+  #nightingale-footer a:hover { color: var(--f-sand) !important; }
+
+  .footer-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 36px;
+    margin-bottom: 56px;
+  }
+
+  .footer-col h3 {
+    font-family: var(--f-serif);
+    font-weight: 400;
+    color: var(--f-sand) !important;
+    font-size: 1.05rem;
+    margin: 0 0 18px 0;
+  }
+
+  .footer-logo { width: 150px; height: auto; display: block; margin-bottom: 18px; }
+
+  .footer-brand p {
+    color: var(--f-text-dim);
+    line-height: 1.6;
+    font-size: 0.92rem;
+    max-width: 320px;
+    margin: 0 0 18px 0;
+  }
+
+  .footer-links { list-style: none; padding: 0; margin: 0; }
+  .footer-links li { margin-bottom: 10px; }
+  .footer-links a { font-size: 0.92rem; color: var(--f-text-dim) !important; }
+  .footer-links a:hover { color: var(--f-text) !important; }
+
+  .footer-contact p { color: var(--f-text); font-size: 0.92rem; margin: 0 0 14px 0; line-height: 1.6; }
+
+  #nightingale-footer .footer-btn {
+    display: inline-block;
+    border: 1px solid var(--f-sand);
+    color: var(--f-sand) !important;
+    padding: 10px 22px;
+    border-radius: 100px;
+    font-size: 0.84rem;
+    font-weight: 500;
+    margin-top: 6px;
+  }
+  #nightingale-footer .footer-btn:hover { background: var(--f-sand); color: var(--f-sage-dark) !important; }
+
+  .footer-compliance {
+    max-width: 800px;
+    margin: 0 auto 44px auto;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 36px;
+  }
+  .footer-compliance h4 {
+    font-family: var(--f-serif);
+    font-weight: 400;
+    color: var(--f-text-dim);
+    font-size: 1rem;
+    margin: 0 0 22px 0;
+  }
+  .compliance-badges { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+  .comp-badge {
+    display: flex; align-items: center; gap: 9px;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 8px 18px;
+    border-radius: 8px;
+  }
+  .comp-icon { font-size: 1.25rem; }
+  .comp-text { text-align: left; font-size: 0.66rem; font-weight: 500; letter-spacing: 0.5px; line-height: 1.25; color: var(--f-text); }
+
+  .footer-disclaimer {
+    max-width: 860px;
+    margin: 0 auto 28px auto;
+    text-align: center;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.6;
+  }
+  .footer-disclaimer a { text-decoration: underline; color: rgba(255,255,255,0.75) !important; }
+
+  .footer-bottom {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--f-text-dim);
+    font-size: 0.8rem;
+    gap: 12px;
+  }
+
+  @media (max-width: 800px) {
+    .footer-container { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: span 2; text-align: center; }
+    .footer-brand .footer-logo { margin-left: auto; margin-right: auto; }
+    .footer-brand p { margin-left: auto; margin-right: auto; }
+  }
+  @media (max-width: 560px) {
+    .footer-container { grid-template-columns: 1fr; text-align: center; }
+    .footer-brand .footer-logo { margin-left: auto; margin-right: auto; }
+    .comp-badge { width: 100%; justify-content: center; }
+  }
+</style>
+
+<footer id="nightingale-footer">
+  <div class="footer-container">
+
+    <div class="footer-col footer-brand">
+      <img src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/white-nightingale-logo.svg" alt="Nightingale Pediatrics" class="footer-logo">
+      <p>Clinical-grade screening and intervention for children and parents in Singapore.</p>
+      <a href="https://wa.me/6582228505" class="footer-btn">Book Intake Call</a>
     </div>
 
-    <section class="gd-section gd-reveal">
-      <h2>1. What an ADHD Assessment Is (and Is Not)</h2>
-      <p>Evaluating ADHD in children is an extensive clinical process rather than a single test or checklist. In practice, ADHD is identified by evaluating consistent behavioral patterns across multiple environments over time. A rigorous assessment examines a child's developmental and functional history rather than isolated behaviors during a single appointment.</p>
-      <p>Comprehensive evaluations assess executive functioning and rule out secondary factors. High activity levels alone do not indicate ADHD; formal assessments combine structured clinical interviews, direct behavioral observation, and standardized rating scales to ensure objective results.</p>
-    </section>
-
-    <section class="gd-section gd-reveal">
-      <h2>2. Indications for Clinical Evaluation</h2>
-      <p>Parents often seek guidance following observations from teachers or persistent difficulties at home. Evaluation may be indicated when a child demonstrates:</p>
-      <ul>
-        <li>Persistent inattention or difficulty completing age-appropriate tasks.</li>
-        <li>Impulsivity that impacts social interactions or personal safety.</li>
-        <li>Hyperactivity noticeably higher than expected for their developmental stage.</li>
-        <li>Academic difficulties alongside average or high intellectual ability.</li>
-        <li>Emotional regulation challenges, including frequent frustration or low challenge tolerance.</li>
+    <div class="footer-col">
+      <h3>Assessments</h3>
+      <ul class="footer-links">
+        <li><a href="/screening">Screening</a></li>
+        <li><a href="/neurodevelopmental-assessment">ADHD &amp; Autism Diagnosis</a></li>
+        <li><a href="/academic-assessment">IQ &amp; School Readiness</a></li>
+        <li><a href="/diagnosis">Full Diagnostics Overview</a></li>
       </ul>
-      <p>Initial steps involve determining whether these behaviors occur consistently across two or more settings, such as home and school.</p>
-    </section>
-
-    <section class="gd-section gd-reveal">
-      <h2>3. Components of a Multi-Disciplinary Evaluation</h2>
-      <p>A formal evaluation synthesizes information across multiple domains. Standard protocols include:</p>
-      <ol>
-        <li><strong>Developmental and Family History Interview:</strong> Reviewing medical history, family background, and early milestones.</li>
-        <li><strong>Behavioral Data Collection:</strong> Gathering structured observations from primary caregivers and educators.</li>
-        <li><strong>Standardized Rating Scales:</strong> Administering validated psychometric tools (e.g., Conners-4, BASC-3) to compare behaviors against peer norms.</li>
-        <li><strong>Direct Clinical Observation:</strong> Observing task persistence, attention, and interaction styles in a clinical setting.</li>
-        <li><strong>Differential Assessment:</strong> Screening for co-occurring factors, including anxiety, sleep disruption, or emotional stressors.</li>
-      </ol>
-    </section>
-
-    <section class="gd-section gd-reveal">
-      <h2>4. Role of Cognitive (IQ) and Academic Testing</h2>
-      <p>Cognitive assessments (such as the WISC-V) are utilized when indicated to clarify a child's broader learning profile. Testing identifies specific learning differences (e.g., Dyslexia) or highlights profiles where high cognitive capability coexists with executive functioning challenges.</p>
-      <p>Parents reviewing evaluation options should clarify whether a quote covers behavioral measures alone or includes full cognitive and academic testing.</p>
-    </section>
-
-    <section class="gd-section gd-reveal">
-      <h2>5. Distinguishing ADHD from Related Conditions</h2>
-      <p>Differential evaluation clarifies primary sources of difficulty when symptoms overlap:</p>
-      <ul>
-        <li><strong>ADHD vs. Anxiety:</strong> Inattention may stem from internal worry rather than primary executive functioning deficits.</li>
-        <li><strong>ADHD vs. Learning Differences:</strong> Restlessness or disengagement can occur when a child struggles with processing speed or reading comprehension.</li>
-        <li><strong>ADHD vs. Autism Spectrum Traits:</strong> Executive control challenges frequently overlap, though targeted intervention approaches differ.</li>
-      </ul>
-    </section>
-
-    <section class="gd-section gd-reveal">
-      <h2>6. Public vs. Private Evaluation Routes in Singapore</h2>
-      <p>Families in Singapore consider both public healthcare pathways and private sector clinics. Key operational differences include:</p>
-
-      <div class="gd-table-wrap">
-        <table class="gd-table">
-          <thead>
-            <tr>
-              <th style="width:30%;">Feature</th>
-              <th style="width:35%;">Public Healthcare System<br><span>(Polyclinic referral to KKH/NUH)</span></th>
-              <th style="width:35%;">Private Clinical Practice<br><span>(Private Psychology / Medical Clinics)</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Wait Time</td>
-              <td>Typically 3 to 18 months for initial appointment.</td>
-              <td>Typically 1 to 4 weeks.</td>
-            </tr>
-            <tr>
-              <td>Cost Structure</td>
-              <td>Subsidized rates for eligible Citizens/PRs (approx. $150–$800).</td>
-              <td>Fee-for-service. Private diagnostic batteries typically range from $1,800 to $3,500.</td>
-            </tr>
-            <tr>
-              <td>Referral Requirement</td>
-              <td>Polyclinic or GP referral required for subsidies.</td>
-              <td>Direct appointment booking without referral.</td>
-            </tr>
-            <tr>
-              <td>Scope &amp; Support</td>
-              <td>Focuses on diagnostic criteria and medical management.</td>
-              <td>Provides developmental profiling, parent consultation, and school support plans.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="gd-section gd-reveal">
-      <h2>7. Evaluation Outcomes and Reports</h2>
-      <p>Following evaluation, formal clinical reports provide:</p>
-      <ul>
-        <li><strong>Diagnostic Impressions:</strong> Clear summary regarding diagnostic criteria.</li>
-        <li><strong>Cognitive &amp; Behavioral Profile:</strong> Analysis of identified strengths and support needs.</li>
-        <li><strong>Recommendations:</strong> Actionable strategies for home and school settings, including classroom seating or examination access arrangements.</li>
-      </ul>
-    </section>
-
-    <section class="gd-section gd-reveal">
-      <h2>8. Care Coordination</h2>
-      <p>Comprehensive care often requires multi-disciplinary coordination, which may include educational therapy, occupational therapy, parent guidance, or medical consultation with a pediatrician or psychiatrist when appropriate.</p>
-    </section>
-
-    <section class="gd-section gd-reveal">
-      <h2>9. Frequently Asked Questions</h2>
-      <div class="gd-faq-list">
-        <details class="gd-faq-item">
-          <summary>How much does ADHD testing cost in Singapore?</summary>
-          <p>Subsidized public hospital evaluations generally cost between $150 and $800 for eligible residents. Private evaluations typically range from $1,800 to $3,500 depending on the scope of testing required.</p>
-        </details>
-        <details class="gd-faq-item">
-          <summary>How is a child evaluated for ADHD in Singapore?</summary>
-          <p>Evaluation involves a multi-step clinical assessment. Families can obtain a referral through a polyclinic for public hospital services, or contact a qualified private psychology or pediatric clinic directly.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <div class="gd-contact-section gd-reveal">
-      <h3>Contact Us</h3>
-      <p>Have questions about child assessments? Send us a direct message below.</p>
-      
-      <form id="gdContactForm" class="gd-contact-form" onsubmit="handleFormSubmit(event)">
-        <div class="gd-form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="Name" required autocomplete="name" />
-        </div>
-        
-        <div class="gd-form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email" required autocomplete="email" />
-        </div>
-        
-        <div class="gd-form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="Message" rows="4" required></textarea>
-        </div>
-
-        <div class="gd-form-group" style="background: var(--white); padding: 14px; border-radius: 8px; border: 1px solid var(--line);">
-          <label for="captchaAnswer" style="font-weight: 600;">Spam Verification</label>
-          <span id="captchaQuestion" style="font-size: 0.95rem; margin-bottom: 6px; display: block;"></span>
-          <input type="number" id="captchaAnswer" required placeholder="Enter number" style="max-width: 160px;" />
-          <span id="captchaError" style="color: #C97B5A; font-size: 0.85rem; display: none; margin-top: 4px;">Incorrect answer. Try again.</span>
-        </div>
-
-        <button type="submit" class="gd-btn">Send Message</button>
-      </form>
     </div>
 
-    <div class="gd-footer-note gd-reveal">
-      <p>"This page reflects evaluation practices in Singapore and is provided for educational purposes. It does not constitute medical advice or formal clinical diagnosis."</p>
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <ul class="footer-links">
+        <li><a href="/bonfire-ai">Bonfire AI</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/children-adhd-testing-singapore">ADHD Guide</a></li>
+        <li><a href="https://wa.me/6582228505">Masterclass</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h3>Contact</h3>
+      <p>
+        <a href="https://wa.me/6582228505">+65 8222 8505</a><br>
+        <a href="mailto:concierge@bonfire.cc">concierge@bonfire.cc</a>
+      </p>
     </div>
 
   </div>
 
-</div>
+  <div class="footer-compliance">
+    <h4>Built with tools that are:</h4>
+    <div class="compliance-badges">
+      <div class="comp-badge">
+        <span class="comp-icon">⚕️</span>
+        <span class="comp-text">HIPAA<br>COMPLIANT</span>
+      </div>
+      <div class="comp-badge">
+        <span class="comp-icon">🔒</span>
+        <span class="comp-text">GDPR<br>COMPLIANT</span>
+      </div>
+      <div class="comp-badge">
+        <span class="comp-icon">🛡️</span>
+        <span class="comp-text">PDPA<br>COMPLIANT</span>
+      </div>
+    </div>
+  </div>
 
-<!-- WhatsApp Floating Widget -->
+  <div class="footer-disclaimer">
+    Nightingale Pediatrics does not provide psychiatric emergency services. If you or someone you know are in a crisis, please call 995, 999, National Mindline 1711, <a href="https://www.sos.org.sg/contact-us/" target="_blank">SOS (Samaritans of Singapore)</a>, <a href="https://www.imh.com.sg/Pages/Contact-Us.aspx" target="_blank">IMH</a> or head to the nearest emergency room for assistance.
+  </div>
+
+  <div class="footer-bottom">
+    <span>Copyright © 2026 Bonfire Health Pte. Ltd. All Rights Reserved.</span>
+    <span>
+      <a href="https://nightingalepediatrics.com/privacy-policy-nightingale">Privacy Policy</a> &nbsp;|&nbsp;
+      <a href="https://nightingalepediatrics.com/terms-of-use-nightingale">Terms of Service</a>
+    </span>
+  </div>
+</footer>
+
+<style>
+  /* ---------- Click-to-WhatsApp widget ---------- */
+  .wa-widget{
+    position: fixed; right: 22px; bottom: 22px; z-index: 200;
+    display: flex; flex-direction: column; align-items: flex-end; gap: 12px;
+    font-family: 'Google Sans Flex', 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: opacity .3s ease, transform .3s ease;
+  }
+  .wa-widget.wa-hidden{ opacity: 0; transform: translateY(14px); pointer-events: none; }
+
+  .wa-bubble{
+    max-width: 232px; background: #FAF9F6; color: #2C3539;
+    border: 1px solid #E5E0D3; border-radius: 16px 16px 4px 16px;
+    padding: 14px 30px 14px 16px; font-size: 0.86rem; line-height: 1.45;
+    box-shadow: 0 12px 32px rgba(44,53,57,0.16); position: relative;
+    opacity: 0; transform: translateY(8px) scale(0.96);
+    transition: opacity .3s ease, transform .3s ease; pointer-events: none;
+  }
+  .wa-bubble.wa-show{ opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+  .wa-bubble-close{
+    position: absolute; top: 4px; right: 6px; background: none; border: none;
+    font-size: 17px; line-height: 1; color: #48545A; cursor: pointer; padding: 6px;
+  }
+
+  .wa-button{
+    width: 58px; height: 58px; border-radius: 50%; background: #25D366;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.22); position: relative;
+    flex-shrink: 0; transition: transform .2s ease;
+  }
+  .wa-button:hover{ transform: scale(1.06); }
+  .wa-button svg{ width: 28px; height: 28px; position: relative; z-index: 2; }
+  .wa-pulse{
+    position: absolute; inset: 0; border-radius: 50%; background: #25D366;
+    opacity: 0.55; z-index: 1;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .wa-pulse{ animation: wa-pulse-anim 2.4s ease-out infinite; }
+  }
+  @keyframes wa-pulse-anim{
+    0%{ transform: scale(1); opacity: 0.5; }
+    100%{ transform: scale(1.7); opacity: 0; }
+  }
+
+  @media (max-width: 600px){
+    .wa-widget{ right: 16px; bottom: 16px; }
+    .wa-bubble{ max-width: 200px; font-size: 0.82rem; }
+    .wa-button{ width: 52px; height: 52px; }
+    .wa-button svg{ width: 25px; height: 25px; }
+  }
+</style>
+
 <div class="wa-widget" id="waWidget">
-  <a href="https://wa.me/6582228505" class="wa-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.42.687 4.68 1.878 6.598L3 29l7.087-2.336A12.44 12.44 0 0016.001 28C22.905 28 28.5 22.404 28.5 15.5S22.905 3 16.001 3zm0 22.6a10.06 10.06 0 01-5.13-1.404l-.368-.219-3.79 1.25 1.27-3.693-.24-.38A10.06 10.06 0 015.9 15.5c0-5.577 4.524-10.1 10.101-10.1S26.1 9.923 26.1 15.5 21.577 25.6 16.001 25.6zm5.542-7.564c-.303-.152-1.793-.885-2.07-.986-.278-.101-.48-.152-.682.152-.202.303-.784.985-.961 1.188-.177.202-.354.227-.657.076-.303-.152-1.278-.471-2.435-1.504-.9-.803-1.508-1.795-1.685-2.098-.177-.303-.019-.467.133-.618.136-.136.303-.354.454-.53.152-.177.202-.303.303-.506.101-.202.05-.379-.025-.53-.076-.152-.682-1.646-.935-2.253-.246-.591-.497-.511-.682-.52l-.582-.01a1.12 1.12 0 00-.809.379c-.278.303-1.06 1.036-1.06 2.529s1.085 2.934 1.236 3.137c.152.202 2.135 3.26 5.174 4.572.723.312 1.287.499 1.727.639.726.231 1.386.198 1.908.12.582-.087 1.793-.733 2.046-1.442.253-.708.253-1.315.177-1.442-.076-.126-.278-.202-.581-.354z"/></svg>
+  <div class="wa-bubble" id="waBubble">
+    <button type="button" class="wa-bubble-close" id="waBubbleClose" aria-label="Dismiss">&times;</button>
+    <span id="waBubbleText">Hi! Have a question? Chat with us on WhatsApp.</span>
+  </div>
+  <a href="https://wa.me/6582228505" id="waButton" class="wa-button" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span class="wa-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 32 32" fill="#ffffff" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.42.687 4.68 1.878 6.598L3 29l7.087-2.336A12.44 12.44 0 0016.001 28C22.905 28 28.5 22.404 28.5 15.5S22.905 3 16.001 3zm0 22.6a10.06 10.06 0 01-5.13-1.404l-.368-.219-3.79 1.25 1.27-3.693-.24-.38A10.06 10.06 0 015.9 15.5c0-5.577 4.524-10.1 10.101-10.1S26.1 9.923 26.1 15.5 21.577 25.6 16.001 25.6zm5.542-7.564c-.303-.152-1.793-.885-2.07-.986-.278-.101-.48-.152-.682.152-.202.303-.784.985-.961 1.188-.177.202-.354.227-.657.076-.303-.152-1.278-.471-2.435-1.504-.9-.803-1.508-1.795-1.685-2.098-.177-.303-.019-.467.133-.618.136-.136.303-.354.454-.53.152-.177.202-.303.303-.506.101-.202.05-.379-.025-.53-.076-.152-.682-1.646-.935-2.253-.246-.591-.497-.511-.682-.52l-.582-.01a1.12 1.12 0 00-.809.379c-.278.303-1.06 1.036-1.06 2.529s1.085 2.934 1.236 3.137c.152.202 2.135 3.26 5.174 4.572.723.312 1.287.499 1.727.639.726.231 1.386.198 1.908.12.582-.087 1.793-.733 2.046-1.442.253-.708.253-1.315.177-1.442-.076-.126-.278-.202-.581-.354z"/></svg>
   </a>
 </div>
 
 <script>
   (function(){
-    // Scroll reveal logic
-    var revealEls = document.querySelectorAll('.gd-reveal');
+
+    var assessmentsDropdown = document.getElementById('assessmentsDropdown');
+    var assessmentsToggle = document.getElementById('assessmentsToggle');
+    if(assessmentsDropdown && assessmentsToggle){
+      assessmentsToggle.addEventListener('click', function(e){
+        e.stopPropagation();
+        var isOpen = assessmentsDropdown.classList.toggle('n-open');
+        assessmentsToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(e){
+        if(!assessmentsDropdown.contains(e.target)){
+          assessmentsDropdown.classList.remove('n-open');
+          assessmentsToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape'){
+          assessmentsDropdown.classList.remove('n-open');
+          assessmentsToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    var mobileMenu = document.getElementById('mobileMenu');
+    var mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    var mobileMenuClose = document.getElementById('mobileMenuClose');
+    function openMobileMenu(){
+      mobileMenu.classList.add('n-open');
+      mobileMenuToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu(){
+      mobileMenu.classList.remove('n-open');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    if(mobileMenuToggle) mobileMenuToggle.addEventListener('click', openMobileMenu);
+    if(mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+    if(mobileMenu){
+      mobileMenu.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', closeMobileMenu);
+      });
+    }
+
+    var revealEls = document.querySelectorAll('.n-reveal');
     if('IntersectionObserver' in window){
       var io = new IntersectionObserver(function(entries){
         entries.forEach(function(e){
           if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
         });
-      }, { threshold:0.1 });
+      }, { threshold:0.12 });
       revealEls.forEach(function(el){ io.observe(el); });
     } else {
       revealEls.forEach(function(el){ el.classList.add('in-view'); });
     }
 
-    // Math CAPTCHA initialization
-    var num1 = Math.floor(Math.random() * 9) + 1;
-    var num2 = Math.floor(Math.random() * 9) + 1;
-    var correctAnswer = num1 + num2;
+    var track = document.getElementById('focusCarousel');
+    var prevBtn = document.getElementById('carouselPrev');
+    var nextBtn = document.getElementById('carouselNext');
+    var dots = document.querySelectorAll('.n-carousel-dot');
 
-    var questionEl = document.getElementById('captchaQuestion');
-    if(questionEl){
-      questionEl.textContent = 'What is ' + num1 + ' + ' + num2 + '?';
+    function cardWidth(){
+      var card = track.querySelector('.n-carousel-card');
+      if(!card) return 0;
+      var style = window.getComputedStyle(card);
+      return card.offsetWidth + parseFloat(style.marginRight || 0) + 24;
     }
 
-    window.handleFormSubmit = function(e){
-      e.preventDefault();
-      var userAnswer = parseInt(document.getElementById('captchaAnswer').value, 10);
-      var errorEl = document.getElementById('captchaError');
+    function scrollToIndex(i){
+      track.scrollTo({ left: i * cardWidth(), behavior:'smooth' });
+    }
 
-      if(userAnswer !== correctAnswer){
-        errorEl.style.display = 'block';
-        return;
-      }
+    dots.forEach(function(dot){
+      dot.addEventListener('click', function(){
+        scrollToIndex(parseInt(dot.getAttribute('data-index'), 10));
+      });
+    });
 
-      errorEl.style.display = 'none';
+    if(prevBtn){
+      prevBtn.addEventListener('click', function(){
+        track.scrollBy({ left: -cardWidth(), behavior:'smooth' });
+      });
+    }
+    if(nextBtn){
+      nextBtn.addEventListener('click', function(){
+        track.scrollBy({ left: cardWidth(), behavior:'smooth' });
+      });
+    }
 
-      var name = encodeURIComponent(document.getElementById('name').value);
-      var email = encodeURIComponent(document.getElementById('email').value);
-      var message = encodeURIComponent(document.getElementById('message').value);
+    var scrollTimeout;
+    track.addEventListener('scroll', function(){
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(function(){
+        var w = cardWidth();
+        if(!w) return;
+        var idx = Math.round(track.scrollLeft / w);
+        dots.forEach(function(dot, i){ dot.classList.toggle('active', i === idx); });
+      }, 80);
+    });
 
-      var mailtoUrl = 'mailto:keith@bonfire.cc?subject=Inquiry from ' + name + '&body=Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0AMessage: ' + message;
-      window.location.href = mailtoUrl;
+    var carouselControls = document.querySelector('.n-carousel-controls');
+    function updateCarouselControlsVisibility(){
+      var hasOverflow = track.scrollWidth > track.clientWidth + 4;
+      if(carouselControls) carouselControls.classList.toggle('n-controls-hidden', !hasOverflow);
+    }
+    updateCarouselControlsVisibility();
+    var resizeTimeout;
+    window.addEventListener('resize', function(){
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(updateCarouselControlsVisibility, 150);
+    });
+
+    var nightingaleYesCount = 0;
+
+    window.nightingaleNextQuestion = function(currentId, nextId, isYes){
+      if(isYes) nightingaleYesCount++;
+      document.getElementById(currentId).classList.remove('active');
+      setTimeout(function(){ document.getElementById(nextId).classList.add('active'); }, 100);
     };
+
+    window.nightingaleShowResult = function(currentId, isYes){
+      if(isYes) nightingaleYesCount++;
+      document.getElementById(currentId).classList.remove('active');
+      setTimeout(function(){
+        if(nightingaleYesCount > 0){
+          document.getElementById('result-book').classList.add('active');
+        } else {
+          document.getElementById('result-resources').classList.add('active');
+        }
+      }, 100);
+    };
+
+    if('IntersectionObserver' in window){
+      var imgObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            var img = entry.target;
+            if(img.dataset.src){
+              img.src = img.dataset.src;
+              img.removeAttribute('data-src');
+            }
+            imgObserver.unobserve(img);
+          }
+        });
+      }, { rootMargin:'200px' });
+      document.querySelectorAll('img[loading="lazy"]').forEach(function(img){ imgObserver.observe(img); });
+    }
+
+    var waButton = document.getElementById('waButton');
+    var waWidget = document.getElementById('waWidget');
+    var waBubble = document.getElementById('waBubble');
+    var waBubbleText = document.getElementById('waBubbleText');
+    var waBubbleClose = document.getElementById('waBubbleClose');
+    var waBase = 'https://wa.me/6582228505';
+    var waDefaultMessage = "Hi Nightingale, I'd like to learn more about your services!";
+    var waBubbleDismissed = false;
+
+    function waSetMessage(text){
+      waButton.setAttribute('href', waBase + '?text=' + encodeURIComponent(text));
+    }
+    waSetMessage(waDefaultMessage);
+
+    var waTargets = document.querySelectorAll('[data-wa-message]:not(.n-carousel-card)');
+    if('IntersectionObserver' in window && waTargets.length){
+      var waContextObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting && entry.intersectionRatio >= 0.55){
+            var msg = entry.target.getAttribute('data-wa-message') || waDefaultMessage;
+            waSetMessage(msg);
+          }
+        });
+      }, { threshold: [0.55] });
+      waTargets.forEach(function(el){ waContextObserver.observe(el); });
+    }
+
+    document.querySelectorAll('.n-carousel-card[data-wa-message]').forEach(function(card){
+      var setFromCard = function(){ waSetMessage(card.getAttribute('data-wa-message')); };
+      card.addEventListener('mouseenter', setFromCard);
+      card.addEventListener('touchstart', setFromCard, { passive: true });
+      card.addEventListener('focusin', setFromCard);
+    });
+
+    var waFooter = document.getElementById('nightingale-footer');
+    if('IntersectionObserver' in window && waFooter){
+      var waFooterObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          waWidget.classList.toggle('wa-hidden', entry.isIntersecting);
+        });
+      }, { threshold: 0.05 });
+      waFooterObserver.observe(waFooter);
+    }
+
+    setTimeout(function(){
+      if(!waBubbleDismissed) waBubble.classList.add('wa-show');
+    }, 3500);
+
+    if(waBubbleClose){
+      waBubbleClose.addEventListener('click', function(){
+        waBubbleDismissed = true;
+        waBubble.classList.remove('wa-show');
+      });
+    }
+
   })();
 </script>
-
-<footer id="nightingale-footer">
-  <div class="footer-clean-content">
-    <p>Nightingale Pediatrics does not provide psychiatric emergency services. If you or someone you know are in a crisis, please call 995, 999, National Mindline 1711, SOS (Samaritans of Singapore), IMH or head to the nearest emergency room for assistance.</p>
-    <address class="footer-address">
-      Novena Medical Center<br>
-      10, Sinaran Drive,<br>
-      Singapore 307506
-    </address>
-    <div class="footer-clean-bottom">
-      Copyright © 2026 Bonfire Health Pte. Ltd. All Rights Reserved.
-    </div>
-  </div>
-</footer>
 
 </body>
 </html>
