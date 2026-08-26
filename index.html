@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@300..700&display=swap" rel="stylesheet">
 
-<!-- Preload hero background SVG (retained from original) -->
+<!-- Preload hero background SVG -->
 <link rel="preload" as="image" href="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Misc/hero%20brain.svg">
 
 <style>
@@ -426,6 +426,18 @@
               <a href="/diagnosis">Full Diagnostics Overview</a>
             </div>
           </li>
+          <li class="n-nav-dropdown" id="consultantsDropdown">
+            <button type="button" class="n-nav-dropdown-toggle" id="consultantsToggle" aria-expanded="false">
+              Consultants
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="n-nav-dropdown-menu">
+              <a href="https://nightingalepediatrics.com/jaswyn-chin">Dr. Jaswyn Chin</a>
+              <a href="https://nightingalepediatrics.com/eileen-ng">Dr. Eileen Ng</a>
+              <a href="https://nightingalepediatrics.com/yeow-may">Dr. Tan Yeow May</a>
+              <a href="https://nightingalepediatrics.com/davy-guo">Dr. Davy Guo</a>
+            </div>
+          </li>
           <li><a class="n-nav-link" href="/pricing">Pricing</a></li>
           <li><a class="n-nav-link" href="/children-adhd-testing-singapore">ADHD Guide</a></li>
           <li><a class="n-nav-link" href="/bonfire-ai">Bonfire AI</a></li>
@@ -452,6 +464,11 @@
       <li><a class="n-mobile-sub" href="/neurodevelopmental-assessment">ADHD &amp; Autism Diagnosis</a></li>
       <li><a class="n-mobile-sub" href="/academic-assessment">IQ &amp; School Readiness</a></li>
       <li><a class="n-mobile-sub" href="/diagnosis">Full Diagnostics Overview</a></li>
+      <li><span class="n-mobile-group-label">Consultants</span></li>
+      <li><a class="n-mobile-sub" href="https://nightingalepediatrics.com/jaswyn-chin">Dr. Jaswyn Chin</a></li>
+      <li><a class="n-mobile-sub" href="https://nightingalepediatrics.com/eileen-ng">Dr. Eileen Ng</a></li>
+      <li><a class="n-mobile-sub" href="https://nightingalepediatrics.com/yeow-may">Dr. Tan Yeow May</a></li>
+      <li><a class="n-mobile-sub" href="https://nightingalepediatrics.com/davy-guo">Dr. Davy Guo</a></li>
       <li><a href="/pricing">Pricing</a></li>
       <li><a href="/children-adhd-testing-singapore">ADHD Guide</a></li>
       <li><a href="/bonfire-ai">Bonfire AI</a></li>
@@ -704,7 +721,7 @@
     <div class="n-container">
       <div class="n-head n-reveal">
         <span class="n-eyebrow" style="justify-content:center; display:flex;">Our Team</span>
-        <h2 class="n-h2 n-center">Trusted Clinical Leadership & Expert Care</h2>
+        <h2 class="n-h2 n-center">Trusted Clinical Leadership &amp; Expert Care</h2>
         <p class="n-p n-lead" style="margin-left:auto; margin-right:auto;">From psychological evaluations to specialized therapy, our clinicians guide your family through every step.</p>
       </div>
 
@@ -1084,27 +1101,33 @@
 <script>
   (function(){
 
-    var assessmentsDropdown = document.getElementById('assessmentsDropdown');
-    var assessmentsToggle = document.getElementById('assessmentsToggle');
-    if(assessmentsDropdown && assessmentsToggle){
-      assessmentsToggle.addEventListener('click', function(e){
-        e.stopPropagation();
-        var isOpen = assessmentsDropdown.classList.toggle('n-open');
-        assessmentsToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-      document.addEventListener('click', function(e){
-        if(!assessmentsDropdown.contains(e.target)){
-          assessmentsDropdown.classList.remove('n-open');
-          assessmentsToggle.setAttribute('aria-expanded', 'false');
-        }
-      });
-      document.addEventListener('keydown', function(e){
-        if(e.key === 'Escape'){
-          assessmentsDropdown.classList.remove('n-open');
-          assessmentsToggle.setAttribute('aria-expanded', 'false');
-        }
-      });
+    // Setup toggles for dropdowns
+    function setupDropdown(dropdownId, toggleId) {
+      var dropdown = document.getElementById(dropdownId);
+      var toggle = document.getElementById(toggleId);
+      if (dropdown && toggle) {
+        toggle.addEventListener('click', function(e){
+          e.stopPropagation();
+          var isOpen = dropdown.classList.toggle('n-open');
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+        document.addEventListener('click', function(e){
+          if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('n-open');
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+        document.addEventListener('keydown', function(e){
+          if (e.key === 'Escape') {
+            dropdown.classList.remove('n-open');
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
     }
+
+    setupDropdown('assessmentsDropdown', 'assessmentsToggle');
+    setupDropdown('consultantsDropdown', 'consultantsToggle');
 
     var mobileMenu = document.getElementById('mobileMenu');
     var mobileMenuToggle = document.getElementById('mobileMenuToggle');
