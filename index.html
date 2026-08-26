@@ -160,6 +160,7 @@
   .n-section-sand{ background:var(--sand); }
   .n-section-deep{ background:var(--sand-deep); }
   .n-section-sage{ background:var(--sage); color:var(--white); overflow:hidden; }
+  .n-section-white{ background:var(--white); }
 
   .n-eyebrow{
     display:inline-flex; align-items:center; gap:8px;
@@ -308,6 +309,55 @@
   .n-quiz-icon{ width:52px; height:52px; border-radius:50%; background:var(--sage-light); display:flex; align-items:center; justify-content:center; margin:0 auto 18px auto; }
   .n-quiz-icon svg{ width:24px; height:24px; stroke:var(--sage-dark); }
 
+  /* ---------- Clinician Team ---------- */
+  .n-team-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:28px 20px; }
+  .n-team-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:24px;
+    padding:32px 24px;
+    box-shadow:0 10px 28px rgba(44,53,57,0.04);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .n-team-card:hover{ transform:translateY(-4px); box-shadow:0 18px 40px rgba(44,53,57,0.08); }
+  .n-team-photo-wrap{ position:relative; display:flex; justify-content:center; margin-bottom:18px; width:100%; overflow:hidden; }
+  .n-team-blob{ position:absolute; inset:0; z-index:0; }
+  .n-team-photo{
+    position:relative; z-index:1;
+    width:75%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:42% 58% 61% 39% / 51% 44% 56% 49%;
+    background:var(--white);
+    border:1px solid var(--line);
+  }
+  .n-team-role{
+    font-size:0.75rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--terracotta);
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  .n-team-name{ font-size:1.24rem; margin:0 0 10px 0; font-family:var(--serif); color:var(--charcoal); }
+  .specialty-container{ display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin-bottom:14px; }
+  .specialty-tag{ background:var(--sage-light); color:var(--sage-dark); font-size:0.75rem; padding:4px 12px; border-radius:100px; font-weight:500; }
+  .consultant-bio{ font-size:0.88rem; color:var(--charcoal-soft); margin-bottom:20px; line-height:1.5; flex-grow:1; }
+  .n-team-btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:9px 22px;
+    border:1px solid var(--sage-dark);
+    color:var(--sage-dark) !important;
+    font-size:0.84rem; font-weight:500;
+    border-radius:100px;
+    transition:background .2s ease, color .2s ease;
+  }
+  .n-team-btn:hover{ background:var(--sage-dark); color:var(--white) !important; }
+
   /* ---------- FAQ ---------- */
   .n-faq-list{ max-width:760px; margin:0 auto; }
   details.n-faq{ background:var(--white); border:1px solid var(--line); border-radius:16px; padding:22px 26px; margin-bottom:14px; }
@@ -336,6 +386,7 @@
     .n-protocol-consultants ul{ columns:1; text-align:left; }
     .n-protocol-photo{ width:56%; }
     .n-grid-3{ grid-template-columns:1fr; gap:22px; }
+    .n-team-grid{ grid-template-columns:repeat(2, 1fr); }
   }
   @media (max-width:600px){
     .n-h1{ font-size:2rem; }
@@ -345,6 +396,7 @@
     .n-quiz-options{ flex-direction:column; }
     .n-btn{ width:100%; }
     .n-carousel-card{ flex:0 0 88%; }
+    .n-team-grid{ grid-template-columns:1fr; }
   }
 
 </style>
@@ -643,6 +695,81 @@
           <p class="n-p">It sounds like things are stable right now. However, you can still access our AI parenting tools or Masterclasses for extra support.</p>
           <a href="https://nightingalepediatrics.com/masterclass" class="n-btn" style="margin-top:8px;">View Parenting Resources</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLINICIAN TEAM ================= -->
+  <section class="n-section n-section-white" data-wa-message="Hi Nightingale, I'd like to book a consultation with one of your clinicians.">
+    <div class="n-container">
+      <div class="n-head n-reveal">
+        <span class="n-eyebrow" style="justify-content:center; display:flex;">Our Team</span>
+        <h2 class="n-h2 n-center">Trusted Clinical Leadership & Expert Care</h2>
+        <p class="n-p n-lead" style="margin-left:auto; margin-right:auto;">From psychological evaluations to specialized therapy, our clinicians guide your family through every step.</p>
+      </div>
+
+      <div class="n-team-grid">
+
+        <div class="n-team-card n-reveal">
+          <div class="n-team-photo-wrap">
+            <svg class="n-team-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="#E8EFE3" d="M48,-55C61,-45,69,-27,71,-8C73,10,70,29,59,44C48,59,29,70,8,73C-13,76,-38,71,-53,57C-68,43,-73,20,-72,-3C-71,-26,-64,-49,-49,-60C-34,-71,-11,-70,7,-73C25,-76,35,-65,48,-55Z" transform="translate(100 100)"/></svg>
+            <img class="n-team-photo" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Clinician%20Photos/jaswyn.png" alt="Dr. Jaswyn Chin" loading="lazy">
+          </div>
+          <span class="n-team-role">Senior Consultant Psychologist</span>
+          <h3 class="n-team-name">Dr. Jaswyn Chin</h3>
+          <div class="specialty-container">
+            <span class="specialty-tag">Clinical Psychology</span>
+            <span class="specialty-tag">Mind-Body Integration</span>
+          </div>
+          <p class="consultant-bio">Trained in Singapore, Dr. Chin has experience in psychological assessments and interventions for adolescents, adults, and older adults across mental and physical health conditions.</p>
+          <a href="https://nightingalepediatrics.com/jaswyn-chin" class="n-team-btn" target="_blank" rel="noopener noreferrer">About Dr. Jaswyn</a>
+        </div>
+
+        <div class="n-team-card n-reveal">
+          <div class="n-team-photo-wrap">
+            <svg class="n-team-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="#C97B5A" fill-opacity="0.25" d="M46,-52C58,-42,64,-23,66,-3C68,16,66,35,54,48C42,61,21,69,-2,71C-25,73,-50,69,-63,54C-76,39,-77,14,-73,-9C-69,-32,-60,-53,-45,-63C-29,-73,-15,-72,3,-75C21,-78,34,-62,46,-52Z" transform="translate(100 100)"/></svg>
+            <img class="n-team-photo" src="/images/eileen.png" alt="Dr. Eileen Ng" loading="lazy" onerror="this.onerror=null; this.src='https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/nightingale%20official%20icon%20(1).svg'; this.style.objectFit='contain'; this.style.padding='20px';">
+          </div>
+          <span class="n-team-role">Consultant Psychologist</span>
+          <h3 class="n-team-name">Dr. Eileen Ng</h3>
+          <div class="specialty-container">
+            <span class="specialty-tag">Clinical Psychology</span>
+            <span class="specialty-tag">Neuropsychology</span>
+          </div>
+          <p class="consultant-bio">Trained in the United States, she earned her Doctor of Psychology (Psy.D.) in Clinical Psychology from Wheaton College, Illinois.</p>
+          <a href="https://nightingalepediatrics.com/eileen-ng" class="n-team-btn" target="_blank" rel="noopener noreferrer">About Dr. Eileen</a>
+        </div>
+
+        <div class="n-team-card n-reveal">
+          <div class="n-team-photo-wrap">
+            <svg class="n-team-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="#E8EFE3" d="M50,-56C64,-45,72,-25,73,-4C74,17,68,38,54,52C40,66,19,74,-3,77C-25,80,-49,78,-63,64C-77,50,-81,24,-79,0C-77,-24,-70,-48,-54,-60C-38,-72,-13,-72,7,-75C27,-78,36,-67,50,-56Z" transform="translate(100 100)"/></svg>
+            <img class="n-team-photo" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Clinician%20Photos/yeow%20may.png" alt="Dr. Tan Yeow May" loading="lazy">
+          </div>
+          <span class="n-team-role">Consultant Psychologist</span>
+          <h3 class="n-team-name">Dr. Tan Yeow May</h3>
+          <div class="specialty-container">
+            <span class="specialty-tag">Psychodynamic Therapy</span>
+            <span class="specialty-tag">Personality Disorders</span>
+          </div>
+          <p class="consultant-bio">Trained in Australia, Dr. Tan works with adolescents and adults across clinical, forensic, and community settings with a focus on psychodynamic and relational approaches.</p>
+          <a href="https://nightingalepediatrics.com/yeow-may" class="n-team-btn" target="_blank" rel="noopener noreferrer">About Dr. Tan</a>
+        </div>
+
+        <div class="n-team-card n-reveal">
+          <div class="n-team-photo-wrap">
+            <svg class="n-team-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="#C97B5A" fill-opacity="0.25" d="M48,-55C61,-45,69,-27,71,-8C73,10,70,29,59,44C48,59,29,70,8,73C-13,76,-38,71,-53,57C-68,43,-73,20,-72,-3C-71,-26,-64,-49,-49,-60C-34,-71,-11,-70,7,-73C25,-76,35,-65,48,-55Z" transform="translate(100 100)"/></svg>
+            <img class="n-team-photo" src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Clinician%20Photos/davy.png" alt="Dr. Davy Guo" loading="lazy">
+          </div>
+          <span class="n-team-role">Consultant Psychologist</span>
+          <h3 class="n-team-name">Dr. Davy Guo</h3>
+          <div class="specialty-container">
+            <span class="specialty-tag">Counselling Psychology</span>
+            <span class="specialty-tag">Mood Disorders</span>
+          </div>
+          <p class="consultant-bio">Trained in the UK and based in Shanghai, Dr. Guo has over 20 years of experience specializing in counselling and mood disorders.</p>
+          <a href="https://nightingalepediatrics.com/davy-guo" class="n-team-btn" target="_blank" rel="noopener noreferrer">About Dr. Davy</a>
+        </div>
+
       </div>
     </div>
   </section>
