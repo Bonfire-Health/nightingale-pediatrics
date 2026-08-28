@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-SG">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Chelsea Chew | 顾问心理学家 | Nightingale Pediatrics</title>
+<meta name="description" content="Dr Chelsea Chew 是一位教育与辅导心理学家，拥有超过28年的心理评估、心理治疗以及针对儿童、青少年和成人的干预经验。">
+
+<style>
+    :root {
+        --c-teal: #014844;
+        --c-cream: #fff4ea;
+        --c-dark: #0B1C24;
+        --c-gold: #D4AF37;
+        --c-white: #ffffff;
+        --f-serif: 'Georgia', serif;
+        --f-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        --s-container: 1100px;
+        --s-gap: 60px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: var(--f-sans);
+        color: var(--c-dark);
+        background-color: var(--c-cream);
+        line-height: 1.7;
+        font-size: 16px;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: var(--f-serif);
+        color: var(--c-teal);
+        margin: 0 0 1rem 0;
+        font-weight: 400;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        font-size: 1.05rem;
+        opacity: 0.95;
+    }
+
+    .wrapper { width: 100%; display: block; }
+
+    .inner {
+        max-width: var(--s-container);
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+
+    /* HERO */
+    .hero-section {
+        padding: 80px 0;
+        border-bottom: 1px solid rgba(1, 72, 68, 0.1);
+    }
+
+    .profile-grid {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: var(--s-gap);
+        align-items: start;
+    }
+
+    .image-col { position: relative; }
+
+    .profile-frame {
+        width: 100%;
+        aspect-ratio: 4/5;
+        background-color: #ddd;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(1, 72, 68, 0.15);
+        border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .cred-list {
+        margin-top: 30px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .cred-list li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+        color: var(--c-dark);
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        padding-bottom: 12px;
+    }
+
+    .cred-icon {
+        color: var(--c-gold);
+        margin-right: 12px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        flex-shrink: 0;
+    }
+
+    .text-col { padding-top: 10px; }
+
+    .role-tag {
+        display: inline-block;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--c-gold);
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .name-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 8px;
+    }
+
+    h1.name-title {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        line-height: 1.1;
+        margin-bottom: 0;
+    }
+
+    .top-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background-color: rgba(212, 175, 55, 0.1);
+        color: var(--c-teal);
+        padding: 6px 14px;
+        border-radius: 50px;
+        border: 1px solid rgba(212, 175, 55, 0.4);
+        font-family: var(--f-sans);
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .top-badge svg { color: var(--c-gold); }
+
+    h2.role-subtitle {
+        font-family: var(--f-sans);
+        font-size: 1.25rem;
+        color: #666;
+        margin-bottom: 40px;
+        font-weight: 400;
+    }
+
+    .quote-box {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 4px solid var(--c-teal);
+        background: rgba(255,255,255,0.6);
+        font-family: var(--f-serif);
+        font-size: 1.2rem;
+        font-style: italic;
+        color: var(--c-teal);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-main {
+        display: inline-block;
+        background-color: var(--c-teal);
+        color: white;
+        padding: 16px 32px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .btn-main:hover {
+        background-color: var(--c-dark);
+        transform: translateY(-2px);
+    }
+
+    /* EXPERTISE */
+    .expertise-section {
+        background-color: var(--c-teal);
+        color: white;
+        padding: 100px 0;
+    }
+
+    .expertise-header {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 60px auto;
+    }
+
+    .expertise-header h2 {
+        color: var(--c-cream);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .expertise-header p {
+        color: rgba(255,255,255,0.85);
+        font-size: 1.15rem;
+    }
+
+    .grid-capabilities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .cap-card {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 25px;
+        border-radius: 8px;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+    }
+    .cap-card:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: var(--c-gold);
+    }
+
+    .cap-icon {
+        color: var(--c-gold);
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+
+    .cap-text {
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: var(--c-cream);
+        margin: 0;
+    }
+
+    /* FOOTER */
+    .footer-note {
+        background-color: var(--c-dark);
+        color: var(--c-cream);
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+        .profile-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        .image-col {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrapper hero-section">
+        <div class="inner profile-grid">
+
+            <div class="image-col">
+                <div class="profile-frame">
+                    <img src="https://8605291.fs1.hubspotusercontent-na2.net/hubfs/8605291/Clinician%20Photos/chelsea-chew.png" alt="Dr Chelsea Chew" class="profile-img">
+                </div>
+
+                <ul class="cred-list">
+                    <li><span class="cred-icon">✦</span> 澳大利亚昆士兰大学教育心理学博士（院长嘉许名单，最佳论文奖）</li>
+                    <li><span class="cred-icon">✦</span> 新加坡国立大学辅导心理学硕士（修完课程）</li>
+                    <li><span class="cred-icon">✦</span> 新加坡心理学会 (SPS) 正式会员</li>
+                    <li><span class="cred-icon">✦</span> 新加坡注册心理学家名册 (SRP) 注册心理学家</li>
+                    <li><span class="cred-icon">✦</span> 语言：英语和中文</li>
+                    <li><span class="cred-icon">✦</span> 服务形式：面对面及线上</li>
+                </ul>
+            </div>
+
+            <div class="text-col">
+                <span class="role-tag">资深顾问心理学家</span>
+
+                <div class="name-container">
+                    <h1 class="name-title">Dr. Chelsea Chew</h1>
+                    <div class="top-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span>SRP 认可督导员</span>
+                    </div>
+                </div>
+
+                <h2 class="role-subtitle">教育与辅导心理学家</h2>
+
+                <p>Chelsea 拥有超过 28 年担任教育和辅导心理学家的经验。她的职业生涯始于自闭症儿童的行为治疗师，随后在学校帮助有学习和心理健康问题的学生。她还曾在学校健康服务中心工作，辅导面临情绪困扰以及与家人或朋友存在人际关系问题的学生。</p>
+
+                <p>她曾在心理卫生学院 (IMH) 的儿童导向诊所、新加坡读写障碍协会、幼儿园以及针对有不同需求儿童的早期干预中心任职。</p>
+
+                <p>在国立教育学院 (NIE) 担任全职讲师期间，Chelsea 曾教授硕士级别的心理学家并培训教师。她教授心理测验、辅导技巧和心理障碍等课程，并督导过许多萌芽中的心理学家。</p>
+
+                <p>Chelsea 运用多种方法与不同年龄段的客户合作，包括认知行为疗法、行为疗法、人际心理疗法、图式疗法和现实疗法。她擅长根据需要灵活运用不同方法的技巧。</p>
+
+                <div class="quote-box">
+                    <span>"我们终于理解了我儿子的 ADHD。Dr Chelsea 解释得非常清晰，我们现在作为父母感到自信多了。谢谢 Nightingale。" — <em>Mint</em></span>
+                </div>
+
+                <a href="https://calendly.com/meeting-with-nightingale/concierge" target="_blank" class="btn-main">预约咨询</a>
+                <p style="font-size: 0.9rem; color: #888; margin-top: 15px;">提供面对面和线上服务。语言：英语和中文。</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wrapper expertise-section">
+        <div class="inner">
+            <div class="expertise-header">
+                <h2>临床经验与执业领域</h2>
+                <p>Chelsea 为儿童、青少年和成人提供广泛的心理评估和心理治疗干预服务。</p>
+            </div>
+
+            <div class="grid-capabilities">
+                <div class="cap-card">
+                    <span class="cap-icon">●</span>
+                    <p class="cap-text">心理评估（注意力/冲动问题、读写障碍、自闭症）</p>
+                </div>
+                <div class="cap-card">
+                    <span class="cap-icon">●</span>
+                    <p class="cap-text">发育/发展问题的干预</p>
+                </div>
+                <div class="cap-card">
+                    <span class="cap-icon">●</span>
+                    <p class="cap-text">学业与工作相关问题的辅导</p>
+                </div>
+                <div class="cap-card">
+                    <span class="cap-icon">●</span>
+                    <p class="cap-text">适应问题的辅导</p>
+                </div>
+                <div class="cap-card">
+                    <span class="cap-icon">●</span>
+                    <p class="cap-text">焦虑（包括恐慌）与抑郁的辅导</p>
+                </div>
+                <div class="cap-card">
+                    <span class="cap-icon">●</span>
+                    <p class="cap-text">压力管理的辅导</p>
+                </div>
+                <div class="cap-card">
+                    <span class="cap-icon">●</span>
+                    <p class="cap-text">情绪与愤怒管理的辅导</p>
+                </div>
+                <div class="cap-card">
+                    <span class="cap-icon">●</span>
+                    <p class="cap-text">人际关系问题的辅导</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper footer-note">
+        <div class="inner">
+            <p style="margin: 0;">免责声明：非执业西医或牙医。所提供的服务属于心理与治疗性质。</p>
+        </div>
+    </div>
+
+</body>
+</html>
